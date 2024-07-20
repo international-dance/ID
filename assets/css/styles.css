@@ -135,7 +135,7 @@ div {
 }
 .slide-main--subheading {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 20px;
   padding-bottom: 25px;
@@ -151,13 +151,13 @@ div {
 }
 
 .slide-des {
-  text-align: inline-start;
+  text-align: center;
   line-height: 25px;
   border-width: 0px;
   padding: 0px 0px 25px;
   letter-spacing: 0px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   white-space: normal;
   min-height: 0px;
   min-width: 347px;
@@ -477,6 +477,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .slide-badge {
+    right: 1rem;
+    top: -7rem;
+  }
+}
+
 /* MARK: Responsive Ipad
 */
 @media only screen and (max-width: 480px) {
@@ -498,10 +505,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
   .slide-main--heading {
     font-size: 32px;
-  }
-  .slide-badge {
-    right: 1rem;
-    top: -7rem;
   }
   .swiper-pagination {
     display: flex;

@@ -120,6 +120,11 @@ div {
   transition: opacity 0.5s ease, filter 0.5s ease;
 }
 
+.from-left svg,
+.from-right svg {
+  padding: 1rem;
+}
+
 .swiper-slide-active .from-left {
   animation: fadeInLeft 1s ease forwards;
   animation-delay: 0.8s;
@@ -494,6 +499,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .slide-main--heading {
     font-size: 32px;
   }
+  .slide-badge {
+    right: 1rem;
+    top: -7rem;
+  }
   .swiper-pagination {
     display: flex;
     column-gap: 15px;
@@ -547,4 +556,8 @@ article ul li {
 
 article ul li:hover {
   opacity: 1;
+}
+
+article svg {
+  fill: currentColor;
 }

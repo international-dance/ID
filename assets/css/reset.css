@@ -1,0 +1,17 @@
+/*
+  MARK: RESET --------------------------------------------
+*/
+*:before,
+*:after,
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+menu {
+  list-style: none;
+}

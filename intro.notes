@@ -1,0 +1,26 @@
+https://codepen.io/dragontheory/pen/BagjdLJ
+
+This demo showcases a responsive parallax slider using the Swiper library. It includes autoplay functionality with a dynamic progress bar that visually indicates the time left before the slide changes. The progress bar fills horizontally, providing a clear and engaging user experience.
+
+Features:
+
+Parallax Effect: Adds depth to your slides with smooth, animated background movements.
+Autoplay: Automatically transitions through slides, adjustable via a delay setting.
+Navigation: Includes next and previous buttons for manual slide control.
+Pagination: Provides clickable pagination dots to quickly navigate between slides.
+Progress Bar: A horizontal progress bar that fills to indicate the time remaining until the next slide.
+
+Technologies Used:
+
+HTML5: Structured the slider and its elements.
+CSS3: Styled the slider, including the parallax effect and progress bar.
+JavaScript (jQuery): Implemented Swiper slider functionality and progress bar animation.
+This setup is perfect for showcasing creative digital products, providing a visually appealing and interactive experience for users.
+
+How to Use:
+
+Include the required Swiper CSS and JavaScript files in your project.
+Add the provided HTML structure for the slider.
+Implement the CSS for styling the slider and the progress bar.
+Initialize the Swiper slider in your JavaScript, including the autoplay settings and progress bar updates.
+Enjoy exploring the possibilities with this Creative Parallax Slider!

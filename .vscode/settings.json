@@ -1,0 +1,37 @@
+{
+  "cSpell.words": [
+    "autoplay",
+    "Brinkmann",
+    "btns",
+    "corbell",
+    "Filipy",
+    "footlighti",
+    "footlightl",
+    "Oxanium",
+    "Schroth",
+    "SCROLLBARS",
+    "shopnimbly"
+  ],
+  "css.hover.documentation": false,
+  "css.hover.references": false,
+  "css.format.spaceAroundSelectorSeparator": true,
+  "less.format.spaceAroundSelectorSeparator": true,
+  "html-to-css-autocompletion.triggerCharacters": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.operator.notes",
+        "settings": {
+          "foreground": "#92b630"
+        }
+      },
+      {
+        "scope": "variable.language.notes",
+        "settings": {
+          "foreground": "#92b630",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  }
+}

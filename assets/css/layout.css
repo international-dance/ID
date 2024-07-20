@@ -1,0 +1,270 @@
+/*
+  MARK: LAYOUT --------------------------------------------
+*/
+
+body {
+  overflow: hidden;
+  max-width: clamp(320px, 90%, 1000px);
+  /* additional recommendation */
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin-block: 0;
+  }
+}
+
+/*
+  MARK: WRAPPER ----------------------------------
+*/
+app-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 1rem;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/*
+  MARK: ALL PANELS ----------------------------------
+*/
+app-container > * {
+  display: grid;
+  overflow: hidden;
+  align-content: start;
+}
+
+app-logo,
+app-ad,
+sign-in,
+powered-by,
+social-media {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+app-logo {
+  width: clamp(15rem, 90%, 20rem);
+}
+
+social-media {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  justify-content: start;
+  user-select: none;
+
+  a {
+    min-width: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+/*
+  MARK: HEADER/FOOTER ----------------------------
+*/
+header,
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: column;
+  grid-column: 1 / -1;
+  align-items: center;
+  user-select: none;
+  border-radius: .3rem;
+}
+
+
+
+/*
+  MARK: NAV ----------------------------------
+*/
+nav {
+  display: grid;
+  justify-content: start;
+  user-select: none;
+  overflow-x: auto;
+  /* negate normal gap to touch tabs to tab content */
+  margin-block-end: -1rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+
+    li {
+      display: grid;
+      justify-content: center;
+    }
+
+    label {
+      padding-block: .5rem;
+      padding-inline: 2rem;
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+    }
+  }
+}
+
+/* Map tab label to tab article */
+nav:has(#radio01:checked) ~ main article#tab01,
+nav:has(#radio02:checked) ~ main article#tab02,
+nav:has(#radio03:checked) ~ main article#tab03,
+nav:has(#radio04:checked) ~ main article#tab04,
+nav:has(#radio05:checked) ~ main article#tab05 {
+  display: grid;
+}
+
+/* nav:has(input:checked) ~ main article {
+  display: grid;
+} */
+
+/*
+  MARK: TABS ----------------------------------
+*/
+article {
+  display: none;
+  overflow: hidden;
+
+  svg {
+    max-width: 100%;
+  }
+}
+
+h3,
+h4 {
+  padding-left: 1rem;
+  letter-spacing: .05rem;
+}
+
+
+/*
+  MARK: LIST ITEMS ---------------------------------
+*/
+list-item {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+/*
+  MARK: LABELS -------------------------------------
+*/
+label {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+
+/*
+  MARK: SCROLLABLE
+*/
+section {
+  display: grid;
+  overflow: overlay;
+  position: relative;
+  overflow: auto;
+
+  /* p:last-of-type {
+    padding-block-end: 2rem;
+  } */
+
+  h4 {
+    justify-self: center;
+  }
+}
+
+:where(h1, h2, h3, h4, h5, p) {
+  padding: 2rem 2rem 0 2rem;
+}
+
+:where(h1, h2, h3, h4, h5) {
+  padding-block-end: 2rem;
+  justify-self: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+
+/*
+  MARK: FIGURE -------------------------------------
+*/
+figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  figcaption {
+    font-size: inherit;
+    margin-inline: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 40em;
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    position: relative;
+  }
+
+  img::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-attachment: initial;
+    background-color: transparent;
+    background-image: url('/assets/images/app/corner.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+hr {
+  height: 1.5rem;
+  margin-block-start: 3rem;
+  margin-block-end: 1rem;
+  background: url('/assets/images/app/hr.svg') no-repeat center center;
+  border: 0;
+}
+
+/*
+  MARK: MEDIA QUERIES -------------------------------------
+*/
+@media screen and (max-width: 700px) {
+  figure img {
+    margin-inline: 0;
+    margin-block: .5rem;
+  }
+
+  app-container {
+    gap: 0;
+  }
+
+  app-logo,
+  app-ad,
+  sign-in,
+  powered-by,
+  social-media {
+    padding-block: .5rem;
+    padding-inline: .5rem;
+  }
+
+  nav ul li label {
+    padding-inline: 1rem;
+  }
+
+  :where(h1, h2, h3, h4, h5, p) {
+    padding: 1rem 1rem 0 1rem;
+    /* max-width: 65ch; */
+  }
+
+  hr {
+    margin-block-start: 1rem;
+  }
+}

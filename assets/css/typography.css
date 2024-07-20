@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/agencyfb-2');
+
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+
+@font-face {
+  font-family: 'corbel';
+  src: url('fonts/corbell.woff2') format('woff2'),
+      url('fonts/corbell.woff') format('woff'),
+      url("fonts/corbell.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'footlight';
+  src: url('fonts/footlightl.woff2') format('woff2'),
+      url('fonts/footlightl.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'footlighti';
+  src: url('fonts/footlighti.woff2') format('woff2'),
+      url('fonts/footlighti.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/*
+  Fluid typography:
+  https://cqi-units-fluid-typography.webflow.io/
+  https://webflow.com/made-in-webflow/website/cqi-units-fluid-typography
+  https://levelup.gitconnected.com/stop-using-media-queries-for-font-sizes-23e596f27b92
+  font-size: clamp(minimum, preferred, maximum);
+*/
+
+body {
+  line-height: 1.5;
+  font-size: clamp(1rem, 3cqi, 1.5rem);
+}
+
+article {
+  container-type: inline-size;
+
+  h1 {font-size: clamp(1.5rem, 4cqi, 2rem);}
+  h2 {font-size: clamp(1.5rem, 3.7cqi, 2.7rem)}
+  h3 {font-size: clamp(1.2rem, 3cqi, 1.5rem);}
+  h4 {font-size: clamp(1rem, 3cqi, 1.5rem);}
+}
+
+section {
+  container-type: inline-size;
+}
+
+:where(h1, h2, h3, h4, h5) {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:where(h2, h3, h4, h5)::before,
+:where(h2, h3, h4, h5)::after {
+  content: '~';
+  position: absolute;
+}
+
+:where(h2, h3, h4, h5)::before {
+  inset-inline-start: 0;
+}
+
+:where(h2, h3, h4, h5)::after {
+  inset-inline-end: 0;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}

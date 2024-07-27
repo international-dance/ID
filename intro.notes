@@ -24,3 +24,6 @@ Add the provided HTML structure for the slider.
 Implement the CSS for styling the slider and the progress bar.
 Initialize the Swiper slider in your JavaScript, including the autoplay settings and progress bar updates.
 Enjoy exploring the possibilities with this Creative Parallax Slider!
+
+/* MARK: Favicons
+*/

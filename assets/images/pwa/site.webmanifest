@@ -1,0 +1,35 @@
+{
+  "name": "International Dance",
+  "short_name": "ID",
+  "icons": [
+    {
+      "src": "/assets/images/logos/pwa/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logos/pwa/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logos/pwa/pwa-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/images/logos/pwa/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "https://international.dance",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#000000",
+  "description": "Home of the Elizabeth Hawkins Dancers"
+}

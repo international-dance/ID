@@ -5,7 +5,7 @@ $(document).ready(function () {
     parallax: true,
     loop: true,
     autoplay: {
-      delay: 15000, // MARK: Adjust autoplay delay as needed
+      delay: 20000, // MARK: Adjust autoplay delay as needed
       disableOnInteraction: false
     },
     grabCursor: true,

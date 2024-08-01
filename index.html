@@ -5,6 +5,7 @@
     <title>International Dance</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="public, max-age=3600">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your data your way">
     <meta name="color-scheme" content="dark light">
@@ -444,8 +445,7 @@
                           <div class="slide-cta">
                             <a href="https://app.thestudiodirector.com/internationaldance/portal.sd?page=Login" target="_blank" class="slide-btn gradient-btn">Register today!<span><i class="fa-solid fa-arrow-right"></i></span></a>
                           </div>
-                          <a href="https://drive.google.com/file/d/1w8aP6cNuIvvvDknDtCHUVPU28zkL9dhn/view?usp=sharing"
-                            target="_blank" class="slide-badge">
+                          <a href="javascript:void(0);" data-doc-link target="_blank" rel="noopener noreferrer" class="slide-badge">
                             <span class="patch-check">
                               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                                 <path fill="currentColor"
@@ -542,8 +542,7 @@
                           <div class="slide-cta">
                             <a href="https://app.thestudiodirector.com/internationaldance/portal.sd?page=Login" target="_blank" class="slide-btn gradient-btn">Register today!<span><i class="fa-solid fa-arrow-right"></i></span></a>
                           </div>
-                          <a href="https://drive.google.com/file/d/1w8aP6cNuIvvvDknDtCHUVPU28zkL9dhn/view?usp=sharing"
-                            target="_blank" class="slide-badge">
+                          <a href="javascript:void(0);" data-doc-link target="_blank" rel="noopener noreferrer" class="slide-badge">
                             <span class="patch-check">
                               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                                 <path fill="currentColor"
@@ -640,8 +639,7 @@
                           <div class="slide-cta">
                             <a href="https://app.thestudiodirector.com/internationaldance/portal.sd?pageeLogin" target="_blank" class="slide-btn gradient-btn">Register today!<span><i class="fa-solid fa-arrow-right"></i></span></a>
                           </div>
-                          <a href="https://drive.google.com/file/d/1w8aP6cNuIvvvDknDtCHUVPU28zkL9dhn/view?usp=sharing"
-                            target="_blank" class="slide-badge">
+                          <a href="javascript:void(0);" data-doc-link target="_blank" rel="noopener noreferrer" class="slide-badge">
                             <span class="patch-check">
                               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                                 <path fill="currentColor"
@@ -840,6 +838,21 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script>
+        function updateDocumentLinks() {
+            const links = document.querySelectorAll('a[data-doc-link]');
+            const baseUrl = 'https://drive.google.com/file/d/1w8aP6cNuIvvvDknDtCHUVPU28zkL9dhn/view';
+            const timestamp = new Date().getTime();
+            
+            links.forEach(link => {
+                link.href = `${baseUrl}?cache=${timestamp}`;
+                link.removeAttribute('onclick');
+            });
+        }
+
+        // Run the function when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', updateDocumentLinks);
+    </script>
   </body>
 
 </html>

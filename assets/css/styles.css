@@ -480,7 +480,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media only screen and (max-width: 750px) {
   .slide-badge {
     right: 1rem;
-    top: -7rem;
+    top: -5rem;
   }
 }
 

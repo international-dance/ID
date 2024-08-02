@@ -160,12 +160,13 @@ div {
   font-size: 16px;
   white-space: normal;
   min-height: 0px;
-  min-width: 347px;
+  /* min-width: 347px; */
   max-height: none;
-  max-width: 347px;
+  max-width: 400px;
   color: rgb(255, 255, 255);
   margin: auto;
   opacity: 0;
+  text-wrap: pretty;
 }
 .swiper-slide-active .slide-des {
   transition: opacity 0.5s ease, filter 0.5s ease;
@@ -247,7 +248,7 @@ div {
   text-transform: uppercase;
   font-weight: 500;
   position: absolute;
-  right: -184px;
+  right: -150px;
   top: 0;
   transition: 0.3s ease-in-out !important;
   opacity: 0;

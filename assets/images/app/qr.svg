@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 100%;height: auto;" width="1022" height="1022" viewBox="0 0 1022 1022">
-<defs><linearGradient id="pattern-mask" x1="0%" y1="0%" x2="12%" y2="100%" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#f76591" /><stop offset="100%" stop-color="#ffc16f" /></linearGradient>
-<mask id="qrmask"><g fill="#ffffff"><g >
+<defs><linearGradient class="pattern-mask" x1="0%" y1="0%" x2="12%" y2="100%" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#f76591" /><stop offset="100%" stop-color="#ffc16f" /></linearGradient>
+<mask class="qrmask"><g fill="#FFFFFF"><g >
 <g transform="translate(140,28) scale(2.4033333333333)"><rect width="6" height="6"/></g>
 <g transform="translate(154,28) scale(2.4033333333333)"><rect width="6" height="6"/></g>
 <g transform="translate(168,28) scale(2.4033333333333)"><rect width="6" height="6"/></g>
@@ -2083,7 +2083,7 @@
 <g transform="translate(924,980) scale(2.4033333333333)"><rect width="6" height="6"/></g>
 <g transform="translate(952,980) scale(2.4033333333333)"><rect width="6" height="6"/></g>
 </g></g></mask></defs>
-<rect x="0" y="0" width="1022" height="1022" mask="url(#qrmask)" fill="url(#pattern-mask)" />
+<rect x="0" y="0" width="1022" height="1022" mask="url(.qrmask)" fill="url(.pattern-mask)" />
 <g><g transform="translate(28,28)"  fill="#ffc16f"><g transform="scale(7)"><path d="M0,7L0,7c0,3.9,3.1,7,7,7h0c3.9,0,7-3.1,7-7v0c0-3.9-3.1-7-7-7h0C3.1,0,0,3.1,0,7z M7,12L7,12c-2.8,0-5-2.2-5-5v0 c0-2.8,2.2-5,5-5h0c2.8,0,5,2.2,5,5v0C12,9.8,9.8,12,7,12z"/></g></g>
 <g transform="translate(896,28)"  fill="#ffc16f"><g transform="scale(7)"><path d="M0,7L0,7c0,3.9,3.1,7,7,7h0c3.9,0,7-3.1,7-7v0c0-3.9-3.1-7-7-7h0C3.1,0,0,3.1,0,7z M7,12L7,12c-2.8,0-5-2.2-5-5v0 c0-2.8,2.2-5,5-5h0c2.8,0,5,2.2,5,5v0C12,9.8,9.8,12,7,12z"/></g></g>
 <g transform="translate(28,896)"  fill="#ffc16f"><g transform="scale(7)"><path d="M0,7L0,7c0,3.9,3.1,7,7,7h0c3.9,0,7-3.1,7-7v0c0-3.9-3.1-7-7-7h0C3.1,0,0,3.1,0,7z M7,12L7,12c-2.8,0-5-2.2-5-5v0 c0-2.8,2.2-5,5-5h0c2.8,0,5,2.2,5,5v0C12,9.8,9.8,12,7,12z"/></g></g>

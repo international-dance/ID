@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&display=swap');
+
+/* @font-face {
+  font-family: 'G7';
+  src: url('fonts/G7-Segment-7a.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+} */
 
 :root {
   overflow: hidden;
@@ -23,7 +38,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0;
   overflow-x: hidden;
-  /* background: #eee; */
+  /* background: #EEEEEE; */
 }
 app-container {
   display: grid;
@@ -104,7 +119,7 @@ div {
 .slide-main--heading {
   display: block;
   text-align: center;
-  color: #fff;
+  color: #FFFFFF;
   line-height: normal;
   text-shadow: rgb(11, 18, 54) 3px 3px 15px;
   padding: 0px 0px 23px;
@@ -134,7 +149,7 @@ div {
   animation-delay: 1s;
 }
 .slide-main--subheading {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 20px;
@@ -163,7 +178,7 @@ div {
   /* min-width: 347px; */
   max-height: none;
   max-width: 400px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255, 1.0);
   margin: auto;
   opacity: 0;
   text-wrap: pretty;
@@ -196,7 +211,7 @@ div {
     #f7693c
   );
   background-size: 200% auto;
-  color: #ffffff;
+  color: #FFFFFF;
   display: inline-block;
   border: 2px solid transparent;
   width: auto;
@@ -231,7 +246,7 @@ div {
   transform: translateY(-50%);
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
-  background: #fff;
+  background: #FFFFFF;
   color: #3c2fc0;
 }
 .slide-badge {
@@ -244,7 +259,7 @@ div {
   font-size: 9px;
   justify-content: center;
   border-radius: 50%;
-  color: #fff;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 500;
   position: absolute;
@@ -379,11 +394,11 @@ div {
 .slide-btns.swiper-button-prev:after {
   font-size: 16px;
   font-weight: 900;
-  color: #fff;
+  color: #FFFFFF;
 }
 .slide-btns:hover {
-  border: 1px solid #fff;
-  background: #fff;
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
 }
 .slide-btns:hover:after {
   color: #232323;
@@ -393,14 +408,14 @@ span.swiper-pagination-bullet {
   height: 16px;
   background: transparent;
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #fff;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   opacity: 1;
   display: none;
 }
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #fff;
+  background: #FFFFFF;
 }
 .autoplay-progress {
   position: absolute;
@@ -431,7 +446,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding-right: 15px;
 }
 .credited a {
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -446,7 +461,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .social ul li a {
   display: flex;
-  background: #fff;
+  background: #FFFFFF;
   height: 30px;
   width: 30px;
   border-radius: 4px;
@@ -481,7 +496,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media only screen and (max-width: 750px) {
   .slide-badge {
     right: 1rem;
-    top: -5rem;
+    top: -3rem;
   }
 }
 
@@ -553,7 +568,7 @@ article > svg:hover {
 
 article ul li {
   width: 3rem;
-  opacity: 0.3;
+  opacity: 1.0;
   transition: opacity 250ms;
   cursor: pointer;
 }
@@ -564,4 +579,50 @@ article ul li:hover {
 
 article svg {
   fill: currentColor;
+}
+
+ul.countdown {
+  grid-template-columns: auto auto auto auto;
+  position: relative;
+  gap: 1em;
+  justify-items: center;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* width: 50%; */
+  /* margin: 0 auto; */
+  /* padding: 15px 0 20px 0; */
+  /* color: #FFFFFF; */
+  /* border: 1px solid #adafb2; */
+  /* border-width: 1px 0; */
+  /* overflow: hidden; */
+  font-weight: bold;
+
+  li {
+    margin: 0 -3px 0 0;
+    padding: 0;
+    display: inline-block;
+    /* width: 25%; */
+    /* font-size: 72px; */
+    /* font-size: 6vw; */
+    font-size: 2rem;
+    text-align: center;
+    width: unset;
+
+    .number {
+      font-family: 'G7';
+      font-size: 3rem;
+    }
+
+    .label {
+      color: #adafb2;
+      /* font-size: 18px; */
+      /* font-size: 1.5vw; */
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
+.times {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
 }

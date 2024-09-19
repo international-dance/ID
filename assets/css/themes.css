@@ -52,7 +52,7 @@ iframe {
   --txt-opacity: 0.7;
   --txt-active: 255, 255, 255;
   --txt-active-opacity: 1.0;
-  --txt-link-color: 102, 204, 255;
+  --txt-link-color: #9f97f7;
   --txt-link-color-opacity: .5;
   --txt-muted: 255, 255, 255;
   --txt-muted-opacity: 0.5;

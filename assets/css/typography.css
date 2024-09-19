@@ -1,37 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300&display=swap');
-
 @import url('https://fonts.cdnfonts.com/css/agencyfb-2');
-
 @import url('https://fonts.googleapis.com/css?family=Electrolize');
 
 @font-face {
-  font-family: 'corbel';
-  src: url('fonts/corbell.woff2') format('woff2'),
-      url('fonts/corbell.woff') format('woff'),
-      url("fonts/corbell.otf") format("opentype");
+  font-family: 'G7';
+  src: url('/fonts/G7-Segment-7a.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'footlight';
-  src: url('fonts/footlightl.woff2') format('woff2'),
-      url('fonts/footlightl.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'footlighti';
-  src: url('fonts/footlighti.woff2') format('woff2'),
-      url('fonts/footlighti.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
 }
 
 /*

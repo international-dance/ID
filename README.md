@@ -2,11 +2,13 @@
 
 Founded in 1962 by Prima Ballerina Christina Heimlich, International Dance has inspired dancers for generations.
 
-Today, Miss Heimlich's legacy and mantle are taken to new heights by Elizabeth (Banks) Hawkins, an International Dance alumna, Shenandoah University graduate, and the current Owner, CEO, and Director of International Dance.
+Today, Miss Heimlich's legacy and mantle are taken to new creative and visionary heights by Elizabeth (Banks) Hawkins, an International Dance alumna and Christina Heimlich Dancer, Shenandoah University graduate, and the Owner, CEO, and Director of International Dance.
 
 Miss Elizabeth, along with the instructors and staff, values and invests award-winning passion, discipline, and excellence into the lives of students, their families, and the community through the art of dance.
 
-The thriving Annandale, VA premier school of dance offers non-competitive classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for all ages.
+The thriving Annandale, VA premier school of dance showcases its talented students with not one but two major professional-quality performances a year, reflecting the high standards of training and artistry expected and achieved at International Dance.
+
+international Dance offers non-competitive classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for all ages.
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2980.05 618.9" style="fill: currentColor;">
   <g>

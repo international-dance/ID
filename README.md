@@ -72,6 +72,5 @@ The thriving Alexandria (soon to be Annandale), VA premier school of dance offer
 [Instagram](https://instagram.com/internationaldancellc) | [Twitter/X](https://twitter.com/intdnc)<br /><br />
 [ Studio ]<br />
 <a href="" aria-label="International Dance studio front office phone number is 7 0 3 6 3 4 9 8 3 4">703.634.9834</a>
-<address aria-label="Business headquarters address">6550-I Little River Turnpike<br />
-Alexandria, VA 22312</address><br>
-[ Soon to be Annandale ]
+<address aria-label="International Dance business address">7010 Columbia Pike<br />
+Annandale, VA 22003</address>

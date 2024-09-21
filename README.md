@@ -6,7 +6,7 @@ Today, Miss Heimlich's legacy and mantle are taken to new heights by Elizabeth (
 
 Miss Elizabeth, along with the instructors and staff, values and invests award-winning passion, discipline, and excellence into the lives of students, their families, and the community through the art of dance.
 
-The thriving Alexandria (soon to be Annandale), VA premier school of dance offers non-competitive classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for all ages.
+The thriving Annandale, VA premier school of dance offers non-competitive classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for all ages.
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2980.05 618.9" style="fill: currentColor;">
   <g>

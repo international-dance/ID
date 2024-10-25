@@ -44,6 +44,20 @@ app-container {
   display: grid;
 }
 
+/* header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav a {
+  padding-inline: 1rem;
+} */
+
 article {
   display: grid;
   overflow: hidden;

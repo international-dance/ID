@@ -9,7 +9,7 @@ if('serviceWorker' in navigator) {
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2024/10/01 12:00:00");
+var targetDate = new Date("2024/10/28 9:00:00");
 
 // Other date related variables
 var days;

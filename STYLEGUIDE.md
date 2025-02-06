@@ -4,9 +4,11 @@
 
 ### Brand Overview
 
-International Dance, LLC, established in 1962, is dedicated to inspiring generations of dancers through award-winning passion and excellence. The organization offers classes in classical ballet, tap, jazz, folk, character, and lyrical dance for students aged three and above.
+International Dance, LLC, established in 1962, is dedicated to inspiring generations of dancers through award-winning passion and excellence. The premiere dance school offers classes in classical ballet, tap, jazz, folk, character, and lyrical dance for students aged three and above.
 
-<h3>Mission Statement</h3><p>To preserve and promote the vision and discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
+<h3>Mission Statement</h3>
+
+<p>To preserve and promote the vision and discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
 
 ---
 

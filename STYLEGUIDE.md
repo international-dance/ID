@@ -74,19 +74,21 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 
 - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
 - **Weights:** Light, Regular, Bold
-- **Usage:** Use for all headings, subheadings, and body text.
+- **Usage:** Footlight MT Light is used for all International Dance logos, wordmarks, and seals. 
+
+**Usage:**
+If primary is not available
 
 ### Secondary Font
 
-- **Font Name:** [Times New Roman](/assets/fonts/times.ttf)
-- **Weight:** Regular
-- **Font Name:** [Times New Roman Bold](/assets/fonts/timesbd.ttf)
-- **Weight:** Bold
-- **Font Name:** [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
-- **Weight:** Bold, Italic
-- **Font Name:** [Times New Roman Italic](/assets/fonts/timesi.ttf)
-- **Weight:** Italic
-- **Usage:** Use for captions, labels, and other supplementary text.
+**Font Names:** 
+- [Times New Roman](/assets/fonts/times.ttf)
+- [Times New Roman Bold](/assets/fonts/timesbd.ttf)
+- [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
+- [Times New Roman Italic](/assets/fonts/timesi.ttf)
+
+**Usage:**
+**Backup:** If primary font is not available, Times New Roman has worked well as a substitute in the past for small temporary material. 
 
 
 ---

@@ -12,22 +12,6 @@ International Dance, LLC, established in 1962, is dedicated to inspiring generat
 
 ---
 
-## 2. Typography
-
-### Primary Font
-
-- **Font Name:** Helvetica Neue
-- **Weights:** Light, Regular, Bold
-- **Usage:** Use for all headings, subheadings, and body text.
-
-### Secondary Font
-
-- **Font Name:** Arial
-- **Weights:** Regular, Bold
-- **Usage:** Use for captions, labels, and other supplementary text.
-
----
-
 ## 3. Color Palette
 
 The primary colors for "international.dance" are black and white. To add warmth and sophistication, soft pink accent colors are introduced. Below are their representations in various color formats:
@@ -85,6 +69,19 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 - **Primary Logo:** Use the full-color logo on light backgrounds.
 - **Secondary Logo:** Use the white logo on dark backgrounds.
 - **Clear Space:** Maintain a clear space around the logo equal to the height of the "I" in "International."
+
+### Primary Font
+
+- **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
+- **Weights:** Light, Regular, Bold
+- **Usage:** Use for all headings, subheadings, and body text.
+
+### Secondary Font
+
+- **Font Name:** Arial
+- **Weights:** Regular, Bold
+- **Usage:** Use for captions, labels, and other supplementary text.
+
 
 ---
 

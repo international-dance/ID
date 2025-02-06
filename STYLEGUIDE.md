@@ -25,7 +25,8 @@ Representations in various color formats:
     <td><strong>RGB:</strong></td>
     <td><strong>CMYK:</strong></td>
     <td><strong>Pantone:</strong></td>
-    <td><strong>CONTRAST RATIO:</strong></td>
+    <td><strong>CONTRAST RATIO</strong> (white background):</td>
+    <td><strong>CONTRAST RATIO</strong> (black background):</td>
   </tr>
   <tr style="background-color: #000000; color: #FFFFFF;">
     <td><strong>Black</strong></td>
@@ -33,39 +34,44 @@ Representations in various color formats:
     <td>0, 0, 0</td>
     <td>0, 0, 0, 100</td>
     <td>Process Black C</td>
-    <td><strong>12.1</td>
+    <td>12:1</td>
+    <td>12:1</td>
   </tr>
   <tr style="background-color: #FFFFFF; color: #000000;">
     <td><strong>White</strong></td>
-    <td><strong>Hex:</strong> #FFFFFF</td>
-    <td><strong>RGB:</strong> 255, 255, 255</td>
-    <td><strong>CMYK:</strong> 0, 0, 0, 0</td>
-    <td><strong>Pantone:</strong> Process White</td>
-    <td><strong>Contrast Ratio:</strong> Process Black C</td>
+    <td>#FFFFFF</td>
+    <td>255, 255, 255</td>
+    <td>0, 0, 0, 0</td>
+    <td>Process White</td>
+    <td>12:1</td>
+    <td>12:1</td>
   </tr>
   <tr style="background-color: ##D60265;">
     <td><strong>Lightest Pink text can be with white (#FFFFFF) background (contrast ratio 5.71)</strong></td>
-    <td><strong>Hex:</strong> ##D60265</td>
-    <td><strong>RGB:</strong> 247, 215, 215</td>
-    <td><strong>CMYK:</strong> 0, 13, 13, 3</td>
-    <td><strong>Pantone:</strong> 698 C</td>
-    <td><strong>Contrast Ratio:</strong> Process Black C</td>
+    <td>##D60265</td>
+    <td>247, 215, 215</td>
+    <td>0, 13, 13, 3</td>
+    <td>698 C</td>
+    <td>5.7:1</td>
+    <td>12:1</td>
   </tr>
   <tr style="background-color: #F7DCE8;">
     <td><strong>Piggy Pink</strong></td>
-    <td><strong>Hex:</strong> #F7DCE8</td>
-    <td><strong>RGB:</strong> 247, 220, 232</td>
-    <td><strong>CMYK:</strong> 0, 11, 6, 3</td>
-    <td><strong>Pantone:</strong> 705 C</td>
-    <td><strong>Contrast Ratio:</strong> Process Black C</td>
+    <td>#F7DCE8</td>
+    <td>247, 220, 232</td>
+    <td>0, 11, 6, 3</td>
+    <td>705 C</td>
+    <td>12:1</td>
+    <td>12:1</td>
   </tr>
   <tr style="background-color: #FCC7D1;">
     <td><strong>Bubble Gum</strong></td>
-    <td><strong>Hex:</strong> #FCC7D1</td>
-    <td><strong>RGB:</strong> 252, 199, 209</td>
-    <td><strong>CMYK:</strong> 0, 21, 17, 1</td>
-    <td><strong>Pantone:</strong> 1767 C</td>
-    <td><strong>Contrast Ratio:</strong> Process Black C</td>
+    <td>#FCC7D1</td>
+    <td>252, 199, 209</td>
+    <td>0, 21, 17, 1</td>
+    <td>1767 C</td>
+    <td>12:1</td>
+    <td>12:1</td>
   </tr>
 </table>
 

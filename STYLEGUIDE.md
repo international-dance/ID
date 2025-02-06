@@ -78,7 +78,7 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 
 ### Secondary Font
 
-- **Font Name:** Arial
+- **Font Name:** [Times New Roman](/assets/fonts/times.ttf)
 - **Weights:** Regular, Bold
 - **Usage:** Use for captions, labels, and other supplementary text.
 

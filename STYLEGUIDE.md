@@ -14,7 +14,9 @@ International Dance, LLC, established in 1962, is dedicated to inspiring generat
 
 ## 3. Color Palette
 
-The primary colors for "international.dance" are black and white. The colors we have used between vary greatly and are subject to change. Following accessibility contrast ratios is a hard requirement for relevent content (see [Accessibility](#accessibility)). Below are their representations in various color formats:
+The primary colors for "international.dance" are black and white. The colors we have used between vary greatly and are subject to change. Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
+
+Representations in various color formats:
 
 <table>
   <tr style="background-color: #000000; color: #FFFFFF;">
@@ -162,8 +164,6 @@ For enhanced accessibility ([Level AAA](https://www.w3.org/WAI/WCAG2AAA-Conforma
 These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:** Contrast (Enhanced)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html).
 
 By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
-
-Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards.
 
 ### Text Alternatives
 

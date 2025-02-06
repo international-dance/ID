@@ -144,8 +144,7 @@ Icons can be used to enhance navigation and highlight key information but should
 ---
 
 
-
-## 8. [Accessibility] 
+## 8. [Accessibility](#Accessibility)
 
 ### Contrast
 

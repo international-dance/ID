@@ -53,7 +53,7 @@ Representations in various color formats:
     <td>12:1</td>
   </tr>
   <tr style="background-color: ##D60265;">
-    <td><strong>Lightest Pink text can be with white (#FFFFFF) background (contrast ratio 5.71)</strong></td>
+    <td><strong>Pink</strong></td>
     <td>##D60265</td>
     <td>247, 215, 215</td>
     <td></td>

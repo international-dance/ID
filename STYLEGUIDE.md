@@ -21,9 +21,11 @@ Representations in various color formats:
 <table>
   <tr style="background-color: #000000; color: #FFFFFF;">
     <td><strong>NAME</strong></td>
-    <td><strong>HEX:</strong></td>
-    <td><strong>RGB:</strong></td>
+    <td><strong>Hex Triplet:</strong></td>
+    <td><strong>RGB Decimal:</strong></td>
+    <td><strong>RGB Percent:</strong></td>
     <td><strong>CMYK:</strong></td>
+    <td><strong>HSL:</strong></td>
     <td><strong>Pantone:</strong></td>
     <td><strong>CONTRAST RATIO</strong> (white background):</td>
     <td><strong>CONTRAST RATIO</strong> (black background):</td>
@@ -32,7 +34,9 @@ Representations in various color formats:
     <td><strong>Black</strong></td>
     <td>#000000</td>
     <td>0, 0, 0</td>
+    <td></td>
     <td>0, 0, 0, 100</td>
+    <td></td>
     <td>Process Black C</td>
     <td>12:1</td>
     <td>12:1</td>
@@ -41,7 +45,9 @@ Representations in various color formats:
     <td><strong>White</strong></td>
     <td>#FFFFFF</td>
     <td>255, 255, 255</td>
+    <td></td>
     <td>0, 0, 0, 0</td>
+    <td></td>
     <td>Process White</td>
     <td>12:1</td>
     <td>12:1</td>
@@ -50,7 +56,9 @@ Representations in various color formats:
     <td><strong>Lightest Pink text can be with white (#FFFFFF) background (contrast ratio 5.71)</strong></td>
     <td>##D60265</td>
     <td>247, 215, 215</td>
+    <td></td>
     <td>0, 13, 13, 3</td>
+    <td></td>
     <td>698 C</td>
     <td>5.7:1</td>
     <td>12:1</td>
@@ -59,7 +67,9 @@ Representations in various color formats:
     <td><strong>Piggy Pink</strong></td>
     <td>#F7DCE8</td>
     <td>247, 220, 232</td>
+    <td></td>
     <td>0, 11, 6, 3</td>
+    <td></td>
     <td>705 C</td>
     <td>12:1</td>
     <td>12:1</td>
@@ -68,7 +78,9 @@ Representations in various color formats:
     <td><strong>Bubble Gum</strong></td>
     <td>#FCC7D1</td>
     <td>252, 199, 209</td>
+    <td></td>
     <td>0, 21, 17, 1</td>
+    <td></td>
     <td>1767 C</td>
     <td>12:1</td>
     <td>12:1</td>

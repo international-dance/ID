@@ -79,7 +79,13 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 ### Secondary Font
 
 - **Font Name:** [Times New Roman](/assets/fonts/times.ttf)
-- **Weights:** Regular, Bold
+- **Weight:** Regular
+- **Font Name:** [Times New Roman Bold](/assets/fonts/timesbd.ttf)
+- **Weight:** Bold
+- **Font Name:** [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
+- **Weight:** Bold, Italic
+- **Font Name:** [Times New Roman Italic](/assets/fonts/timesi.ttf)
+- **Weight:** Italic
 - **Usage:** Use for captions, labels, and other supplementary text.
 
 

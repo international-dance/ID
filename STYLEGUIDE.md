@@ -14,15 +14,24 @@ International Dance, LLC, established in 1962, is dedicated to inspiring generat
 
 ## 3. Color Palette
 
-The primary colors for "international.dance" are black and white. To add warmth and sophistication, soft pink accent colors are introduced. Below are their representations in various color formats:
+The primary colors for "international.dance" are black and white. The colors we have used between vary greatly and are subject to change. Following accessibility contrast ratios is a hard requirement for relevent content (see [Accessibility](#Accessibility)). Below are their representations in various color formats:
 
 <table>
   <tr style="background-color: #000000; color: #FFFFFF;">
+    <td><strong>NAME</strong></td>
+    <td><strong>HEX:</strong></td>
+    <td><strong>RGB:</strong></td>
+    <td><strong>CMYK:</strong></td>
+    <td><strong>Pantone:</strong></td>
+    <td><strong>CONTRAST RATIO:</strong></td>
+  </tr>
+  <tr style="background-color: #000000; color: #FFFFFF;">
     <td><strong>Black</strong></td>
-    <td><strong>Hex:</strong> #000000</td>
-    <td><strong>RGB:</strong> 0, 0, 0</td>
-    <td><strong>CMYK:</strong> 0, 0, 0, 100</td>
-    <td><strong>Pantone:</strong> Process Black C</td>
+    <td>#000000</td>
+    <td>0, 0, 0</td>
+    <td>0, 0, 0, 100</td>
+    <td>Process Black C</td>
+    <td><strong>12.1</td>
   </tr>
   <tr style="background-color: #FFFFFF; color: #000000;">
     <td><strong>White</strong></td>
@@ -30,13 +39,15 @@ The primary colors for "international.dance" are black and white. To add warmth 
     <td><strong>RGB:</strong> 255, 255, 255</td>
     <td><strong>CMYK:</strong> 0, 0, 0, 0</td>
     <td><strong>Pantone:</strong> Process White</td>
+    <td><strong>Contrast Ratio:</strong> Process Black C</td>
   </tr>
-  <tr style="background-color: #F7D7D7;">
-    <td><strong>Pale Pink</strong></td>
-    <td><strong>Hex:</strong> #F7D7D7</td>
+  <tr style="background-color: ##D60265;">
+    <td><strong>Lightest Pink text can be with white (#FFFFFF) background (contrast ratio 5.71)</strong></td>
+    <td><strong>Hex:</strong> ##D60265</td>
     <td><strong>RGB:</strong> 247, 215, 215</td>
     <td><strong>CMYK:</strong> 0, 13, 13, 3</td>
     <td><strong>Pantone:</strong> 698 C</td>
+    <td><strong>Contrast Ratio:</strong> Process Black C</td>
   </tr>
   <tr style="background-color: #F7DCE8;">
     <td><strong>Piggy Pink</strong></td>
@@ -44,6 +55,7 @@ The primary colors for "international.dance" are black and white. To add warmth 
     <td><strong>RGB:</strong> 247, 220, 232</td>
     <td><strong>CMYK:</strong> 0, 11, 6, 3</td>
     <td><strong>Pantone:</strong> 705 C</td>
+    <td><strong>Contrast Ratio:</strong> Process Black C</td>
   </tr>
   <tr style="background-color: #FCC7D1;">
     <td><strong>Bubble Gum</strong></td>
@@ -51,6 +63,7 @@ The primary colors for "international.dance" are black and white. To add warmth 
     <td><strong>RGB:</strong> 252, 199, 209</td>
     <td><strong>CMYK:</strong> 0, 21, 17, 1</td>
     <td><strong>Pantone:</strong> 1767 C</td>
+    <td><strong>Contrast Ratio:</strong> Process Black C</td>
   </tr>
 </table>
 
@@ -130,7 +143,9 @@ Icons can be used to enhance navigation and highlight key information but should
 
 ---
 
-## 8. Accessibility
+
+
+## 8. [Accessibility] 
 
 ### Contrast
 

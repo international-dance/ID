@@ -28,37 +28,6 @@ International Dance, LLC, established in 1962, is dedicated to inspiring generat
 
 ---
 
-## 3. . Color Palette
-
-The primary colors for "international.dance" are black and white. To add warmth and sophistication, soft pink accent colors are introduced. Below are their representations in various color formats:
-
-### Primary Colors
-
-- **Black:** #000000
-- **White:** #FFFFFF
-
-### Secondary Colors
-
-- **Gray:** #808080
-- **Red:** #FF0000
-
-### Accent Colors
-
----
-
-
-To enhance the visual representation of your color palette in the style guide, you can modify the table rows to match their respective colors. This approach provides a clear and immediate reference for each color used in your branding.
-
-Implementation Steps:
-
-HTML Table with Inline CSS:
-Utilize an HTML table within your Markdown document.
-Apply inline CSS styles to set the background color of each row corresponding to the color it represents.
-Example:
-
-html
-Copy
-Edit
 ## 3. Color Palette
 
 The primary colors for "international.dance" are black and white. To add warmth and sophistication, soft pink accent colors are introduced. Below are their representations in various color formats:

@@ -14,7 +14,7 @@ International Dance, LLC, established in 1962, is dedicated to inspiring generat
 
 ## 3. Color Palette
 
-The primary colors for "international.dance" are black and white. The colors we have used between vary greatly and are subject to change. Following accessibility contrast ratios is a hard requirement for relevent content (see [Accessibility](#Accessibility)). Below are their representations in various color formats:
+The primary colors for "international.dance" are black and white. The colors we have used between vary greatly and are subject to change. Following accessibility contrast ratios is a hard requirement for relevent content (see [Accessibility](#accessibility)). Below are their representations in various color formats:
 
 <table>
   <tr style="background-color: #000000; color: #FFFFFF;">
@@ -143,8 +143,7 @@ Icons can be used to enhance navigation and highlight key information but should
 
 ---
 
-
-## 8. [Accessibility](#Accessibility)
+<h2 id="accessibility">8. ACCESSIBILITY</h2>
 
 ### Contrast
 

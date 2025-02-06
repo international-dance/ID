@@ -14,7 +14,10 @@ International Dance, LLC, established in 1962, is dedicated to inspiring generat
 
 ## 3. Color Palette
 
-The primary colors for "international.dance" are black and white. The colors we have used between vary greatly and are subject to change. Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
+Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
+
+
+The colors we have used between vary greatly and are subject to change. Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
 Representations in various color formats:
 

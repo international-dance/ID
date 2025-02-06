@@ -1,6 +1,4 @@
-Based on the available information from the website [international.dance](https://international.dance/), here is an updated and detailed style guide in Markdown format:
-
-# International Dance Style Guide
+# [international.dance](https://international.dance/) Style Guide
 
 ## 1. Introduction
 

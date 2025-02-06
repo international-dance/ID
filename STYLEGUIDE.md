@@ -21,12 +21,12 @@ Representations in various color formats:
 <table>
   <tr style="background-color: #000000; color: #FFFFFF;">
     <td><strong>NAME</strong></td>
-    <td><strong>Hex Triplet:</strong></td>
-    <td><strong>RGB Decimal:</strong></td>
-    <td><strong>RGB Percent:</strong></td>
-    <td><strong>CMYK:</strong></td>
-    <td><strong>HSL:</strong></td>
-    <td><strong>Pantone:</strong></td>
+    <td><strong>Hex Triplet</strong></td>
+    <td><strong>RGB Decimal</strong></td>
+    <td><strong>RGB Percent</strong></td>
+    <td><strong>CMYK</strong></td>
+    <td><strong>HSL</strong></td>
+    <td><strong>Pantone</strong></td>
     <td><strong>CONTRAST RATIO</strong> (white background):</td>
     <td><strong>CONTRAST RATIO</strong> (black background):</td>
   </tr>

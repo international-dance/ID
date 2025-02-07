@@ -4,7 +4,7 @@
 
 ### Brand Overview
 
-International Dance, LLC, established in 1962, is dedicated to inspiring generations of dancers through award-winning passion and excellence. The premiere dance school offers classes in classical ballet, tap, jazz, folk, character, and lyrical dance for students aged three and above.
+Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The Annandale VA premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
 
 <h3>Mission Statement</h3>
 

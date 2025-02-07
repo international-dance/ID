@@ -8,7 +8,7 @@ Founded in 1962, International Dance has inspired dancers for generations throug
 
 <h3>Mission Statement</h3>
 
-<p>To preserve and promote the vision and discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
+<p>To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
 
 ---
 

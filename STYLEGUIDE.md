@@ -12,7 +12,7 @@ Founded in 1962, International Dance has inspired dancers for generations throug
 
 ---
 
-## 3. Color Palette
+## 2. Color Palette
 
 Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
 
@@ -98,7 +98,7 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 
 ---
 
-## 4. Logo
+## 3. Logo
 
 ### Usage
 
@@ -129,7 +129,7 @@ If primary is not available
 
 ---
 
-## 5. Imagery
+## 4. Imagery
 
 ### Style
 
@@ -138,7 +138,7 @@ If primary is not available
 
 ---
 
-## 6. Icons
+## 5. Icons
 
 ### Icons
 
@@ -150,7 +150,7 @@ Icons can be used to enhance navigation and highlight key information but should
 
 ---
 
-## 7. Components
+## 6. Components
 
 ### Buttons
 
@@ -166,7 +166,7 @@ Icons can be used to enhance navigation and highlight key information but should
 
 ---
 
-<h2 id="accessibility">8. ACCESSIBILITY</h2>
+<h2 id="accessibility">7. ACCESSIBILITY</h2>
 
 ### Contrast
 
@@ -196,7 +196,7 @@ By adhering to these guidelines, "international.dance" ensures that its content 
 
 ---
 
-## 9. Figma Implementation
+## 8. Figma Implementation
 
 ### Components
 

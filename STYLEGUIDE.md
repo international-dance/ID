@@ -4,7 +4,7 @@
 
 ### Brand Overview
 
-Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The Annandale VA premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
+Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The non-competitive Annandale VA premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
 
 <h3>Mission Statement</h3>
 

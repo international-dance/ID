@@ -98,7 +98,7 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 
 ---
 
-## 3. Logo
+## 3. Logo(s)
 
 ### Usage
 

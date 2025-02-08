@@ -1,4 +1,4 @@
-# [international.dance](https://international.dance/) Style Guide
+# [International.Dance](https://international.dance/) Style Guide
 
 ## 1. Introduction
 

@@ -1,6 +1,6 @@
 # [International.Dance](https://international.dance/) Style Guide
 
-## 1. Introduction
+## INTRODUCTION
 
 <h3 id="brand-overview">Brand Overview</h3>
 
@@ -10,9 +10,14 @@ Founded in 1962, International Dance has inspired dancers for generations throug
 
 <p>To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
 
+
+<br>
+
 ---
 
-## 2. Color Palette
+<br>
+
+## COLOR PALETTE
 
 Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
 
@@ -90,21 +95,25 @@ Representations in various color formats:
   </tr>
 </table>
 
-Usage Guidelines:
+### Usage
 
 Primary Colors: Utilize black and white as the foundational colors for backgrounds, text, and primary design elements.
 Accent Colors: Apply soft pink hues to highlight specific sections, calls to action, or decorative elements to add warmth and sophistication.
 By thoughtfully integrating these soft pink tones with black and white, the design achieves a modern and inviting aesthetic.
 
+<br>
+
 ---
 
-## 3. Logo(s)
+<br>
+  
+## LOGO(S)
 
-Wordmark:
+### Wordmark
 
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
-Attributes:
+### Attributes
 - Type: Scalable Vector Graphic (SVG)
 - Color(s):
   - Web = conditional/dynamic
@@ -136,31 +145,42 @@ If primary is not available
 **Usage:**
 **Backup:** If primary font is not available, Times New Roman has worked well as a substitute in the past for small temporary material. 
 
+<br>
 
 ---
 
-## 4. Imagery
+<br>
+
+## IMAGERY
 
 ### Style
 
 - **Photography:** Use high-resolution images that capture the energy, passion, and essence of the [brand overview](#brand-overview) and [mission statement](#mission-statement) of dance.
 - **Illustrations:** Use simple, clean illustrations that complement the photography.
 
+<br>
+
 ---
 
-## 5. Icons
+<br>
 
-### Icons
+## ICONS
 
-Icons should be in black or white, depending on the background, to ensure visibility.
+### Toeshoe
+
+As with the logos, the toeshoe icon should be in black or white, depending on the background, to ensure visibility.
 
 ### Usage
 
 Icons can be used to enhance navigation and highlight key information but should not distract from the main content.
 
+<br>
+
 ---
 
-## 6. Components
+<br>
+
+## COMPONENTS
 
 ### Buttons
 
@@ -174,11 +194,15 @@ Icons can be used to enhance navigation and highlight key information but should
 - **Labels:** Use the primary font in black.
 - **Error Messages:** Red to indicate issues.
 
+<br>
+
 ---
+
+<br>
 
 <h2 id="accessibility">7. ACCESSIBILITY</h2>
 
-### Contrast
+### CONTRAST
 
 The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) specify the following contrast ratio requirements to ensure text readability:
 
@@ -204,9 +228,13 @@ For detailed guidance on implementing text alternatives, refer to [Understanding
 
 By adhering to these guidelines, "international.dance" ensures that its content is accessible to all users, including those utilizing screen readers.
 
+<br>
+
 ---
 
-## 8. Figma Implementation
+<br>
+
+## FIGMA IMPLEMETATION
 
 ### Components
 
@@ -220,6 +248,10 @@ Define text styles and color styles in Figma to streamline the design process.
 
 Utilize Figma's prototyping features to create interactive mockups for user testing and feedback.
 
+<br>
+
 ---
+
+<br>
 
 By adhering to this style guide, International Dance can maintain a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for its audience.

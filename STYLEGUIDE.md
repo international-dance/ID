@@ -1,5 +1,7 @@
 # [International.Dance](https://international.dance/) Style Guide
 
+> _Work in progress (WIP) - [ 2025.02.09 ]_
+
 ## INTRODUCTION
 
 <h3 id="brand-overview">Brand Overview</h3>
@@ -17,7 +19,7 @@ Founded in 1962, International Dance has inspired dancers for generations throug
 
 <br>
 
-## COLOR PALETTE
+## COLOR PALETTES
 
 Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
 

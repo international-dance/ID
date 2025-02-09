@@ -6,11 +6,11 @@
 
 <h3 id="brand-overview">Brand Overview</h3>
 
-Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The Northern VA non-competitive premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
+> Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The Northern VA non-competitive premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
 
 <h3 id="mission-statement">Mission Statement</h3>
 
-<p>To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
+> To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
 
 
 <br>
@@ -21,10 +21,9 @@ Founded in 1962, International Dance has inspired dancers for generations throug
 
 ## COLOR PALETTES
 
-Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
+> Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
 
-
-The colors we have used between vary greatly and are subject to change. Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
+> The colors we have used between vary greatly and are subject to change. Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
 Representations in various color formats:
 
@@ -99,9 +98,9 @@ Representations in various color formats:
 
 ### Usage
 
-Primary Colors: Utilize black and white as the foundational colors for backgrounds, text, and primary design elements.
-Accent Colors: Apply soft pink hues to highlight specific sections, calls to action, or decorative elements to add warmth and sophistication.
-By thoughtfully integrating these soft pink tones with black and white, the design achieves a modern and inviting aesthetic.
+> **Primary Colors:** Utilize black and white as the foundational colors for backgrounds, text, and primary design elements.<br>
+> **Accent Colors:** Apply soft pink hues to highlight specific sections, calls to action, or decorative elements to add warmth and sophistication.<br>
+> By thoughtfully integrating these soft pink tones with black and white, the design achieves a modern and inviting aesthetic.
 
 <br>
 
@@ -116,36 +115,33 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
 ### Attributes
-- Type: Scalable Vector Graphic (SVG)
-- Color(s):
-  - Web = conditional/dynamic
-  - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+> - Type: Scalable Vector Graphic (SVG)
+> - Color(s):
+>   - Web = conditional/dynamic
+>   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
 ### Usage
-- Should be placed in the header at the top left of all International Dance stationary and documentation.
-- Should always be the largest print on the page or media.
-- Documentation page margins should be set globally to 0.5 inches on all sides.
-- Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
+> - Should be placed in the header at the top left of all International Dance stationary and documentation.
+> - Should always be the largest print on the page or media.
+> - Documentation page margins should be set globally to **0.5** inches on all sides.
+> - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
 
 ### Primary Font
 
-- **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
-- **Weights:** Light, Regular, Bold
-- **Usage:** Footlight MT Light is used for all International Dance logos, wordmarks, and seals. 
-
-**Usage:**
-If primary is not available
+> - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
+> - **Weight(s):** Light, Regular, Bold
+> - **Usage:** Footlight MT Light is used for all text elements in the [seal and crest](#seal).  International Dance logos, wordmarks, and seals. 
 
 ### Secondary Font
 
-**Font Names:** 
-- [Times New Roman](/assets/fonts/times.ttf)
-- [Times New Roman Bold](/assets/fonts/timesbd.ttf)
-- [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
-- [Times New Roman Italic](/assets/fonts/timesi.ttf)
+> - **Font Name(s):** 
+>   - [Times New Roman](/assets/fonts/times.ttf)
+>   - [Times New Roman Bold](/assets/fonts/timesbd.ttf)
+>   - [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
+>   - [Times New Roman Italic](/assets/fonts/timesi.ttf)
 
-**Usage:**
-**Backup:** If primary font is not available, Times New Roman has worked well as a substitute in the past for small temporary material. 
+> - **Weight(s):** Light, Regular, Bold
+> - **Usage:** Times New Roman is used for the International Dance wordmark
 
 <br>
 
@@ -157,8 +153,8 @@ If primary is not available
 
 ### Style
 
-- **Photography:** Use high-resolution images that capture the energy, passion, and essence of the [brand overview](#brand-overview) and [mission statement](#mission-statement) of dance.
-- **Illustrations:** Use simple, clean illustrations that complement the photography.
+> - **Photography:** Use high-resolution images that capture the energy, passion, and essence of the [brand overview](#brand-overview) and [mission statement](#mission-statement) of dance.
+> - **Illustrations:** Use simple, clean illustrations that complement the photography.
 
 <br>
 

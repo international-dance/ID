@@ -104,12 +104,17 @@ Wordmark:
 
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
+Attributes:
+- Type: Scalable Vector Graphic (SVG)
+- Color(s):
+  - Web = conditional/dynamic
+  - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
 ### Usage
-
-- **Primary Logo:** Use the full-color logo on light backgrounds.
-- **Secondary Logo:** Use the white logo on dark backgrounds.
-- **Clear Space:** Maintain a clear space around the logo equal to the height of the "I" in "International."
+- Should be placed in the header at the top left of all International Dance stationary and documentation.
+- Should always be the largest print on the page or media.
+- Documentation page margins should be set globally to 0.5 inches on all sides.
+- Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
 
 ### Primary Font
 

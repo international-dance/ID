@@ -100,6 +100,11 @@ By thoughtfully integrating these soft pink tones with black and white, the desi
 
 ## 3. Logo(s)
 
+Wordmark:
+
+![International Dance Wordmark](./assets/images/logos/wordmark.svg)
+
+
 ### Usage
 
 - **Primary Logo:** Use the full-color logo on light backgrounds.

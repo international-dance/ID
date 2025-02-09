@@ -200,7 +200,7 @@ Icons can be used to enhance navigation and highlight key information but should
 
 <br>
 
-<h2 id="accessibility">7. ACCESSIBILITY</h2>
+<h2 id="accessibility">ACCESSIBILITY</h2>
 
 ### CONTRAST
 

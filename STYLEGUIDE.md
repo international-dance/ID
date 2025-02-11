@@ -63,7 +63,7 @@ Representations in various color formats:
     <td>12:1</td>
     <td>12:1</td>
   </tr>
-  <tr style="background-color: ##D60265;">
+<!--   <tr style="background-color: ##D60265;">
     <td><strong>Pink</strong></td>
     <td>##D60265</td>
     <td>247, 215, 215</td>
@@ -95,7 +95,7 @@ Representations in various color formats:
     <td>1767 C</td>
     <td>12:1</td>
     <td>12:1</td>
-  </tr>
+  </tr> -->
 </table>
 
 ### Usage

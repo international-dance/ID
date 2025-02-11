@@ -112,7 +112,7 @@ Representations in various color formats:
   
 ## LOGO(S)
 
-### Wordmark
+### WORDMARK : :
 
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
@@ -147,7 +147,7 @@ Representations in various color formats:
 
 <br>
 
-### Crest
+### CREST : :
 
 ![International Dance Wordmark](./assets/images/logos/crest.svg)
 

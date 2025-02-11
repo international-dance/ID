@@ -119,13 +119,13 @@ Representations in various color formats:
 ### Attributes
 > - Type: Scalable Vector Graphic (SVG)
 > - Color(s):
->   - Web = conditional/dynamic
+>   - Web = conditional/dynamic (OS level light/dark mode driven color schemes.)
 >   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
 ### Usage
-> - Should be placed in the header at the top left of all International Dance stationary and documentation.
-> - Should always be the largest print on the page or media.
-> - Documentation page margins should be set globally to **0.5** inches on all sides.
+> - Should be placed in the header at the top left of all International Dance stationary and documentation unless otherwise instructed by Miss Elizabeth.
+> - Should be the largest print on the page or media unless otherwise instructed by Miss Elizabeth.
+> - Documentation page margins should be globally set to **0.5** inches on all sides. (_Word, PPT, and other document templates coming soon._)
 > - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
 
 ### Primary Font

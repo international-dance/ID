@@ -19,7 +19,7 @@
 
 <br>
 
-![International Dance Media Package Download](./assets/2025.02.11_media_package.zip)
+![International Dance Media Package Download](https://github.com/international-dance/ID/raw/refs/heads/main/assets/2025.02.11_media_package.zip)
 
 
 ## COLOR PALETTES

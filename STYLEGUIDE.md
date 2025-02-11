@@ -25,6 +25,8 @@
 
 > The colors we have used between vary greatly and are subject to change. Ensure sufficient contrast between text and background colors to meet  [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
+<br>
+
 Representations in various color formats:
 
 <table>

@@ -147,6 +147,41 @@ Representations in various color formats:
 
 <br>
 
+### Crest
+
+![International Dance Wordmark](./assets/images/logos/crest.svg)
+
+### Attributes
+> - Type: Scalable Vector Graphic (SVG)
+> - Color(s):
+>   - Web = conditional/dynamic
+>   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+
+### Usage
+> - Should be placed in the header at the top left of all International Dance stationary and documentation.
+> - Should always be the largest print on the page or media.
+> - Documentation page margins should be set globally to **0.5** inches on all sides.
+> - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
+
+### Primary Font
+
+> - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
+> - **Weight(s):** Light, Regular, Bold
+> - **Usage:** Footlight MT Light is used for all text elements in the [seal and crest](#seal).  International Dance logos, wordmarks, and seals. 
+
+### Secondary Font
+
+> - **Font Name(s):** 
+>   - [Times New Roman](/assets/fonts/times.ttf)
+>   - [Times New Roman Bold](/assets/fonts/timesbd.ttf)
+>   - [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
+>   - [Times New Roman Italic](/assets/fonts/timesi.ttf)
+
+> - **Weight(s):** Light, Regular, Bold
+> - **Usage:** Times New Roman is used for the International Dance wordmark
+
+<br>
+
 ---
 
 <br>

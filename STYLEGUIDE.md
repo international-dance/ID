@@ -167,7 +167,7 @@ Representations in various color formats:
 
 > - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
 > - **Weight(s):** Light, Regular, Bold
-> - **Usage:** Footlight MT Light is used for all text elements in the [seal and crest](#seal).  International Dance logos, wordmarks, and seals. 
+> - **Usage:** Footlight MT Light is used for all text elements in the [crest](#crest).  International Dance logos, wordmarks, and crests. 
 
 ### Secondary Font
 

@@ -19,6 +19,8 @@
 
 <br>
 
+**International Dance Media Package** contains all current branding and fonts. 
+
 [International Dance Media Package Download](https://github.com/international-dance/ID/raw/refs/heads/main/assets/2025.02.11_media_package.zip) (2.5MB ZIP)
 
 

@@ -1,6 +1,6 @@
 # [International.Dance](https://international.dance/) Style Guide
 
-> _Work in progress (WIP) - [ 2025.02.09 ]_
+> _Work in progress (WIP) - [ 2025.02.11 ]_
 
 ## INTRODUCTION
 

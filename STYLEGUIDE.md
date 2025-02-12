@@ -73,8 +73,8 @@ Representations in various color formats : :
     <td>0, 0, 0, 100</td>
     <td></td>
     <td>Process Black C</td>
-    <td>12:1</td>
-    <td>12:1</td>
+    <td>21:1</td>
+    <td>21:1</td>
   </tr>
   <tr style="background-color: #FFFFFF; color: #000000;">
     <td><strong>White</strong></td>

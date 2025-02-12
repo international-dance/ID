@@ -43,7 +43,6 @@
 <br>
 
 <h3 id="color-palletes">COLOR PALLETES : :</h3>
-## 
 
 > Contrasting the background of sharp primary colors: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
 

@@ -266,7 +266,7 @@ By adhering to these contrast ratios, you can ensure that your content is access
 
 For detailed guidance on implementing text alternatives, refer to [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
 
-By adhering to these guidelines, "international.dance" ensures that its content is accessible to all users, including those utilizing screen readers.
+By adhering to these guidelines, International Dance ensures that its content is accessible to all users.
 
 <br>
 
@@ -276,17 +276,14 @@ By adhering to these guidelines, "international.dance" ensures that its content 
 
 ## FIGMA IMPLEMETATION
 
-### Components : :
-
-> Create reusable components for buttons, forms, and other UI elements to maintain consistency.
-
 ### Styles : :
 
-> Define text styles and color styles in Figma to streamline the design process.
+> (_Configuration templates coming soon._)
 
 ### Prototyping : :
 
-> Utilize Figma's prototyping features to create interactive mockups for user testing and feedback.
+> Figma's prototyping features can be used for mockups, but is not required.
+> (_Configuration templates coming soon._)
 
 <br>
 

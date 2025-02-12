@@ -126,7 +126,7 @@ Representations in various color formats : :
   
 ## LOGO(S)
 
-### WORDMARK : :
+<h3 id="wordmark">INTERNATIONAL DANCE WORDMARK : :</h3>
 
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
@@ -157,7 +157,7 @@ Representations in various color formats : :
 
 <br>
 
-<h3 id="crest">International Dance Crest : :</h3>
+<h3 id="crest">INTERNATIONAL DANCE CREST : :</h3>
 
 ![International Dance Crest](./assets/images/logos/crest.svg)
 
@@ -176,13 +176,41 @@ Representations in various color formats : :
 
 ### Usage : :
 > - Should be used as a backgroud image (watermark) or as part of a marketing presentation title page.
-> - Maintain color contrast accessibility standards for online media. 
+> - Maintain color contrast accessibility standards for online media and documentation. 
 
 ### Font : :
 
 > - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
 > - **Weight(s):** Light
 > - **Usage:** Footlight MT Light is used for all text elements in the [International Dance crest](#crest). 
+
+<br>
+
+<h3 id="crest">INTERNATIONAL DANCE TOESHOE : :</h3>
+
+![International Dance Crest](./assets/images/logos/toeshoe.svg)
+
+### Attributes : :
+> - Type: Scalable Vector Graphic (SVG)
+> - Color(s):
+>   - Web = conditional/dynamic
+>   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+
+### Compatibility : :
+> Designed to seamlessly integrate with industry-standard software:
+> * Adobe Creative Suite (Photoshop, Illustrator, After Effects)
+> * Affinity Designer
+> * Figma
+> * Rive
+
+### Usage : :
+> - Primarily used as the "I" in the [International Dance wordmark](#wordmark), and the favicon for the [International.Dance](https://international.dance/).
+> - May NOT be used without International Dance context.
+> - Maintain color contrast accessibility standards for online media and documentation. 
+
+### Font : :
+
+> - None
 
 <br>
 
@@ -194,24 +222,8 @@ Representations in various color formats : :
 
 ### Style : :
 
-> - **Photography:** Use high-resolution images that capture the energy, passion, and essence of the [brand overview](#brand-overview) and [mission statement](#mission-statement) of dance.
-> - **Illustrations:** Use simple, clean illustrations that complement the photography.
-
-<br>
-
----
-
-<br>
-
-## ICONS
-
-### Toeshoe : :
-
-As with the logos, the toeshoe icon should be in black or white, depending on the background, to ensure visibility.
-
-### Usage : :
-
-Icons can be used to enhance navigation and highlight key information but should not distract from the main content.
+> - **Photography:** High-resolution images that capture the energy, passion, and essence of the [brand overview](#brand-overview) and [mission statement](#mission-statement).
+> - **Illustrations:** Simple, minimal, and clean illustrations that complement photography and the International Dance [brand overview](#brand-overview).
 
 <br>
 

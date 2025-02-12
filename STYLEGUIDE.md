@@ -198,7 +198,8 @@ Representations in various color formats : :
 
 <h3 id="toeshoe">INTERNATIONAL DANCE TOESHOE : :</h3>
 
-![International Dance Crest](./assets/images/logos/toeshoe.svg)
+<img src="./assets/images/logos/toeshoe.svg" width="200">
+<!-- ![International Dance Crest](./assets/images/logos/toeshoe.svg) -->
 
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)

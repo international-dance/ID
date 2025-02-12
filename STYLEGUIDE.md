@@ -4,9 +4,9 @@
 
 ## INTRODUCTION
 
-<h3 id="brand-overview">Brand Overview : :</h3>
-
 > Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
+
+<h3 id="brand-overview">Brand Overview : :</h3>
 
 > Primary colors: Black (#000000) and White (#FFFFFF) - two sharp extremes that symbolize discipline, class, and excellence - offset and balanced by soft and or muted pinks, reds, purples, and blues that symbolize grace, poise, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
 

@@ -13,7 +13,7 @@
 <h3 id="brand-overview">Brand Overview : :</h3>
 
 > Background : :
-> * Foundational primary colors (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence
+> * Foundational [primary colors](#color-palletes) (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence
 
 > Foreground : :
 > * Highlights offset and balanced with soft and or muted pinks, reds, purples, and blues - symbolizing grace, poise, beauty, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
@@ -42,7 +42,8 @@
 
 <br>
 
-## COLOR PALETTES
+<h3 id="color-palletes">COLOR PALLETES : :</h3>
+## 
 
 > Contrasting the background of sharp primary colors: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
 
@@ -191,7 +192,7 @@ Representations in various color formats : :
 
 > - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
 > - **Weight(s):** Light
-> - **Usage:** Footlight MT Light is used for all text elements in the [International Dance crest](#crest). 
+> - **Usage:** Footlight MT Light is used for all text elements in the [International Dance crest](#crest).
 
 <br>
 

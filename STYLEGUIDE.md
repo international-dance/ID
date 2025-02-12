@@ -69,9 +69,9 @@ Representations in various color formats : :
     <td><strong>Black</strong></td>
     <td>#000000</td>
     <td>0, 0, 0</td>
-    <td></td>
+    <td>0, 0, 0</td>
     <td>0, 0, 0, 100</td>
-    <td></td>
+    <td>0°, 0, 0</td>
     <td>Process Black C</td>
     <td>21:1</td>
     <td>21:1</td>
@@ -80,9 +80,9 @@ Representations in various color formats : :
     <td><strong>White</strong></td>
     <td>#FFFFFF</td>
     <td>255, 255, 255</td>
-    <td></td>
+    <td>100, 100, 100</td>
     <td>0, 0, 0, 0</td>
-    <td></td>
+    <td>0°, 0, 100</td>
     <td>Process White</td>
     <td>21:1</td>
     <td>21:1</td>

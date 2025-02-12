@@ -261,14 +261,6 @@ These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:
 
 By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
 
-### Text Alternatives : :
-
-> Incorporating text alternatives for non-text content is essential for accessibility. According to the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/), specifically [Guideline 1.1: Text Alternatives](https://www.w3.org/WAI/WCAG21/Understanding/text-alternatives), all non-text content should have a text alternative that serves the equivalent purpose.
-
-For detailed guidance on implementing text alternatives, refer to [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
-
-By adhering to these guidelines, International Dance ensures that its content is accessible to all users.
-
 <br>
 
 ---

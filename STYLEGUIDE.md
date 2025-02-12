@@ -21,10 +21,10 @@
 
 ## MEDIA PACKAGE
 
-> Contents : : All current branding and fonts<br>
-> Dated : : 2025.02.11<br>
-> Size : : 2.5MB<br>
-> [International Dance Media Package Download](https://github.com/international-dance/ID/raw/refs/heads/main/assets/2025.02.11_media_package.zip)
+> * [x] Contents : : All current branding and fonts<br>
+> * [x] Dated : : 2025.02.11<br>
+> * [x] Size : : 2.5MB<br>
+> Link : :[International Dance Media Package Download](https://github.com/international-dance/ID/raw/refs/heads/main/assets/2025.02.11_media_package.zip)
 
 
 <br>
@@ -136,28 +136,24 @@ Representations in various color formats : :
 >   - Web = conditional/dynamic (OS level light/dark mode driven color schemes.)
 >   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
+### Compatibility : :
+> Designed to seamlessly integrate with industry-standard software:
+> * Adobe Creative Suite (Photoshop, Illustrator, After Effects)
+> * Affinity Designer
+> * Figma
+> * Rive
+
 ### Usage : :
 > - Should be placed in the header at the top left of all International Dance stationary and documentation unless otherwise instructed by Miss Elizabeth.
 > - Should be the largest print on the page or media unless otherwise instructed by Miss Elizabeth.
 > - Documentation page margins should be globally set to **0.5** inches on all sides. (_Word, PPT, and other document templates coming soon._)
 > - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
 
-### Primary Font : :
-
-> - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
-> - **Weight(s):** Light, Regular, Bold
-> - **Usage:** Footlight MT Light is used for all text elements in the [International Dance crest](#crest).  International Dance logos, wordmarks, and seals. 
-
-### Secondary Font : :
+### Font : :
 
 > - **Font Name(s):** 
 >   - [Times New Roman](/assets/fonts/times.ttf)
->   - [Times New Roman Bold](/assets/fonts/timesbd.ttf)
->   - [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
->   - [Times New Roman Italic](/assets/fonts/timesi.ttf)
-
-> - **Weight(s):** Light, Regular, Bold
-> - **Usage:** Times New Roman is used for the International Dance wordmark
+> - **Weight(s):** Regular
 
 <br>
 
@@ -171,28 +167,22 @@ Representations in various color formats : :
 >   - Web = conditional/dynamic
 >   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
-### Usage : :
-> - Should be placed in the header at the top left of all International Dance stationary and documentation.
-> - Should always be the largest print on the page or media.
-> - Documentation page margins should be set globally to **0.5** inches on all sides.
-> - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
+### Compatibility : :
+> Designed to seamlessly integrate with industry-standard software:
+> * Adobe Creative Suite (Photoshop, Illustrator, After Effects)
+> * Affinity Designer
+> * Figma
+> * Rive
 
-### Primary Font : :
+### Usage : :
+> - Should be used as a backgroud image (watermark) or as part of a marketing presentation title page.
+> - Maintain color contrast accessibility standards for online media. 
+
+### Font : :
 
 > - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
-> - **Weight(s):** Light, Regular, Bold
-> - **Usage:** Footlight MT Light is used for all text elements in the [crest](#crest).  International Dance logos, wordmarks, and crests. 
-
-### Secondary Font : :
-
-> - **Font Name(s):** 
->   - [Times New Roman](/assets/fonts/times.ttf)
->   - [Times New Roman Bold](/assets/fonts/timesbd.ttf)
->   - [Times New Roman Bold Italic](/assets/fonts/timesbi.ttf)
->   - [Times New Roman Italic](/assets/fonts/timesi.ttf)
-
-> - **Weight(s):** Light, Regular, Bold
-> - **Usage:** Times New Roman is used for the International Dance wordmark
+> - **Weight(s):** Light
+> - **Usage:** Footlight MT Light is used for all text elements in the [International Dance crest](#crest). 
 
 <br>
 
@@ -222,26 +212,6 @@ As with the logos, the toeshoe icon should be in black or white, depending on th
 ### Usage : :
 
 Icons can be used to enhance navigation and highlight key information but should not distract from the main content.
-
-<br>
-
----
-
-<br>
-
-## COMPONENTS
-
-### Buttons : :
-
-- **Primary Buttons:** Black background with white text.
-- **Secondary Buttons:** White background with black text and a black border.
-- **Hover States:** Slight opacity change or underline to indicate interactivity.
-
-### Forms : :
-
-- **Input Fields:** White background with black border.
-- **Labels:** Use the primary font in black.
-- **Error Messages:** Red to indicate issues.
 
 <br>
 

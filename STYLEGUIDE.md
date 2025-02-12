@@ -157,7 +157,7 @@ Representations in various color formats : :
 > - Should be placed in the header at the top left of all International Dance stationary and documentation unless otherwise instructed by Miss Elizabeth.
 > - Should be the largest print on the page or media unless otherwise instructed by Miss Elizabeth.
 > - Documentation page margins should be globally set to **0.5** inches on all sides. (_Word, PPT, and other document templates coming soon._)
-> - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
+> - Maintain a clear space below the International Dance [Wordmark](#wordmark) equal to the height of the "I" ([Toeshoe](#toeshoe)) in "International."
 
 ### Font : :
 
@@ -196,7 +196,7 @@ Representations in various color formats : :
 
 <br>
 
-<h3 id="crest">INTERNATIONAL DANCE TOESHOE : :</h3>
+<h3 id="toeshoe">INTERNATIONAL DANCE TOESHOE : :</h3>
 
 ![International Dance Crest](./assets/images/logos/toeshoe.svg)
 

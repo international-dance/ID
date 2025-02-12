@@ -45,7 +45,7 @@
 <h3 id="color-palletes">COLOR PALLETES : :</h3>
 ## 
 
-> Contrasting the background of sharp primary colors: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
+> Contrasting the background of sharp primary colors: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
 
 > sufficient contrast between text and background colors to meet [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
@@ -84,8 +84,8 @@ Representations in various color formats : :
     <td>0, 0, 0, 0</td>
     <td></td>
     <td>Process White</td>
-    <td>12:1</td>
-    <td>12:1</td>
+    <td>21:1</td>
+    <td>21:1</td>
   </tr>
 <!--   <tr style="background-color: ##D60265;">
     <td><strong>Pink</strong></td>

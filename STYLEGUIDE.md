@@ -4,11 +4,11 @@
 
 ## INTRODUCTION
 
-Founded in 1962, International Dance, LLC. offers classical ballet, tap, jazz, folk, character, & lyrical dance instruction year-round. Come dance with us! 703.634.9834 contact@international.dance
+> Long : :
+> * Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
 
-Inspiring generations of dancers since 1962 through award winning passion and excellence. 
-
-> Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
+> Short : :
+> * Inspiring generations of dancers since 1962 through award winning passion and excellence.
 
 <h3 id="brand-overview">Brand Overview : :</h3>
 

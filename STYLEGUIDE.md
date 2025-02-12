@@ -247,15 +247,14 @@ Representations in various color formats : :
 
 The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) specify the following contrast ratio requirements to ensure text readability:
 
-* **Normal Text:** A minimum contrast ratio of **4.5:1** between the text and its background.
-* **Large Text:** For text that is **18 point (24 pixels)** or larger, or **14 point (18.66 pixels)** and **bold**, a reduced minimum contrast ratio of **3:1** is acceptable.
-
-These guidelines are detailed in [Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
+> * **Normal Text:** A minimum contrast ratio of **4.5:1** between the text and its background.
+> * **Large Text:** For text that is **18 point (24 pixels)** or larger, or **14 point (18.66 pixels)** and **bold**, a reduced minimum contrast ratio of **3:1** is acceptable.
+> These guidelines are detailed in [Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
 For enhanced accessibility ([Level AAA](https://www.w3.org/WAI/WCAG2AAA-Conformance) compliance), WCAG recommends:
 
-* **Normal Text:** A contrast ratio of **7:1**
-* **Large Text:** A contrast ratio of **4.5:1**.
+> * **Normal Text:** A contrast ratio of **7:1**
+> * **Large Text:** A contrast ratio of **4.5:1**.
 
 These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:** Contrast (Enhanced)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html).
 
@@ -263,7 +262,7 @@ By adhering to these contrast ratios, you can ensure that your content is access
 
 ### Text Alternatives : :
 
-Incorporating text alternatives for non-text content is essential for accessibility. According to the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/), specifically [Guideline 1.1: Text Alternatives](https://www.w3.org/WAI/WCAG21/Understanding/text-alternatives), all non-text content should have a text alternative that serves the equivalent purpose.
+> Incorporating text alternatives for non-text content is essential for accessibility. According to the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/), specifically [Guideline 1.1: Text Alternatives](https://www.w3.org/WAI/WCAG21/Understanding/text-alternatives), all non-text content should have a text alternative that serves the equivalent purpose.
 
 For detailed guidance on implementing text alternatives, refer to [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
 
@@ -279,15 +278,15 @@ By adhering to these guidelines, "international.dance" ensures that its content 
 
 ### Components : :
 
-Create reusable components for buttons, forms, and other UI elements to maintain consistency.
+> Create reusable components for buttons, forms, and other UI elements to maintain consistency.
 
 ### Styles : :
 
-Define text styles and color styles in Figma to streamline the design process.
+> Define text styles and color styles in Figma to streamline the design process.
 
 ### Prototyping : :
 
-Utilize Figma's prototyping features to create interactive mockups for user testing and feedback.
+> Utilize Figma's prototyping features to create interactive mockups for user testing and feedback.
 
 <br>
 

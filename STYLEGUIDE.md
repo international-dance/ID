@@ -10,7 +10,7 @@
 
 <h3 id="mission-statement">Mission Statement : :</h3>
 
-> To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by investing into each student a high-quality dance education, discipline, physicality, respect, and confidence.
+> To preserve and further the vision of founder Christina Heimlich by investing into each student a high-quality dance education, nurturing discipline, physicality, respect, and confidence. 
 
 <br>
 

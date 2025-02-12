@@ -47,7 +47,7 @@
 
 > Contrasting the background of sharp primary colors: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
 
-> sufficient contrast between text and background colors to meet [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
+> Ensure sufficient contrast between text and background colors to meet [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
 <br>
 
@@ -259,7 +259,7 @@ For enhanced accessibility ([Level AAA](https://www.w3.org/WAI/WCAG2AAA-Conforma
 
 These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:** Contrast (Enhanced)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html).
 
-By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
+> By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
 
 <br>
 

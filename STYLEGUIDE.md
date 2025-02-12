@@ -4,11 +4,11 @@
 
 ## INTRODUCTION
 
-<h3 id="brand-overview">Brand Overview</h3>
+<h3 id="brand-overview">Brand Overview : :</h3>
 
 > Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The Northern VA non-competitive premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
 
-<h3 id="mission-statement">Mission Statement</h3>
+<h3 id="mission-statement">Mission Statement : :</h3>
 
 > To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
 
@@ -19,7 +19,7 @@
 
 <br>
 
-## International Dance Media Package
+## MEDIA PACKAGE
 
 Contains all current branding and fonts.
 
@@ -40,7 +40,7 @@ Contains all current branding and fonts.
 
 <br>
 
-Representations in various color formats:
+Representations in various color formats : :
 
 <table>
   <tr style="background-color: #000000; color: #FFFFFF;">
@@ -111,7 +111,7 @@ Representations in various color formats:
   </tr> -->
 </table>
 
-### Usage
+### Usage : :
 
 > **Primary Colors:** Utilize black and white as the foundational colors for backgrounds, text, and primary design elements.<br>
 > **Accent Colors:** Apply soft pink hues to highlight specific sections, calls to action, or decorative elements to add warmth and sophistication.<br>
@@ -129,25 +129,25 @@ Representations in various color formats:
 
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
-### Attributes
+### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
 > - Color(s):
 >   - Web = conditional/dynamic (OS level light/dark mode driven color schemes.)
 >   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
-### Usage
+### Usage : :
 > - Should be placed in the header at the top left of all International Dance stationary and documentation unless otherwise instructed by Miss Elizabeth.
 > - Should be the largest print on the page or media unless otherwise instructed by Miss Elizabeth.
 > - Documentation page margins should be globally set to **0.5** inches on all sides. (_Word, PPT, and other document templates coming soon._)
 > - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
 
-### Primary Font
+### Primary Font : :
 
 > - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
 > - **Weight(s):** Light, Regular, Bold
 > - **Usage:** Footlight MT Light is used for all text elements in the [International Dance crest](#crest).  International Dance logos, wordmarks, and seals. 
 
-### Secondary Font
+### Secondary Font : :
 
 > - **Font Name(s):** 
 >   - [Times New Roman](/assets/fonts/times.ttf)
@@ -164,25 +164,25 @@ Representations in various color formats:
 
 ![International Dance Crest](./assets/images/logos/crest.svg)
 
-### Attributes
+### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
 > - Color(s):
 >   - Web = conditional/dynamic
 >   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
-### Usage
+### Usage : :
 > - Should be placed in the header at the top left of all International Dance stationary and documentation.
 > - Should always be the largest print on the page or media.
 > - Documentation page margins should be set globally to **0.5** inches on all sides.
 > - Maintain a clear space below the International Dance wordmark equal to the height of the "I" (toeshoe) in "International."
 
-### Primary Font
+### Primary Font : :
 
 > - **Font Name:** [Footlight MT Light](/assets/fonts/FTLTLT.TTF)
 > - **Weight(s):** Light, Regular, Bold
 > - **Usage:** Footlight MT Light is used for all text elements in the [crest](#crest).  International Dance logos, wordmarks, and crests. 
 
-### Secondary Font
+### Secondary Font : :
 
 > - **Font Name(s):** 
 >   - [Times New Roman](/assets/fonts/times.ttf)
@@ -201,7 +201,7 @@ Representations in various color formats:
 
 ## IMAGERY
 
-### Style
+### Style : :
 
 > - **Photography:** Use high-resolution images that capture the energy, passion, and essence of the [brand overview](#brand-overview) and [mission statement](#mission-statement) of dance.
 > - **Illustrations:** Use simple, clean illustrations that complement the photography.
@@ -214,11 +214,11 @@ Representations in various color formats:
 
 ## ICONS
 
-### Toeshoe
+### Toeshoe : :
 
 As with the logos, the toeshoe icon should be in black or white, depending on the background, to ensure visibility.
 
-### Usage
+### Usage : :
 
 Icons can be used to enhance navigation and highlight key information but should not distract from the main content.
 
@@ -230,13 +230,13 @@ Icons can be used to enhance navigation and highlight key information but should
 
 ## COMPONENTS
 
-### Buttons
+### Buttons : :
 
 - **Primary Buttons:** Black background with white text.
 - **Secondary Buttons:** White background with black text and a black border.
 - **Hover States:** Slight opacity change or underline to indicate interactivity.
 
-### Forms
+### Forms : :
 
 - **Input Fields:** White background with black border.
 - **Labels:** Use the primary font in black.
@@ -250,7 +250,7 @@ Icons can be used to enhance navigation and highlight key information but should
 
 <h2 id="accessibility">ACCESSIBILITY</h2>
 
-### CONTRAST
+### CONTRAST : :
 
 The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) specify the following contrast ratio requirements to ensure text readability:
 
@@ -268,7 +268,7 @@ These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:
 
 By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
 
-### Text Alternatives
+### Text Alternatives : :
 
 Incorporating text alternatives for non-text content is essential for accessibility. According to the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/), specifically [Guideline 1.1: Text Alternatives](https://www.w3.org/WAI/WCAG21/Understanding/text-alternatives), all non-text content should have a text alternative that serves the equivalent purpose.
 
@@ -284,15 +284,15 @@ By adhering to these guidelines, "international.dance" ensures that its content 
 
 ## FIGMA IMPLEMETATION
 
-### Components
+### Components : :
 
 Create reusable components for buttons, forms, and other UI elements to maintain consistency.
 
-### Styles
+### Styles : :
 
 Define text styles and color styles in Figma to streamline the design process.
 
-### Prototyping
+### Prototyping : :
 
 Utilize Figma's prototyping features to create interactive mockups for user testing and feedback.
 

@@ -21,7 +21,9 @@
 
 ## MEDIA PACKAGE
 
-Contains all current branding and fonts.
+> Contents : : All current branding and fonts.<br>
+> Dated : : 2025.02.11<br>
+> Size : : 2.5MB
 
 [International Dance Media Package Download](https://github.com/international-dance/ID/raw/refs/heads/main/assets/2025.02.11_media_package.zip) (2.5MB ZIP)
 

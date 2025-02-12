@@ -6,11 +6,13 @@
 
 <h3 id="brand-overview">Brand Overview : :</h3>
 
-> Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers a variety of classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
+> Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult. 
 
 <h3 id="mission-statement">Mission Statement : :</h3>
 
-> To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by providing high-quality dance education that inspires each dancer to reach their full potential.
+To provide high-quality dance education and nurturing discipline  physical 
+
+> To preserve and promote the vision and nurturing discipline of founder Christina Heimlich by investing into each student a high-quality dance education, discipline, physicality, respect, and confidence.
 
 <br>
 

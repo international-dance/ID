@@ -28,7 +28,7 @@ Foreground : :
 
 <br>
 
-<h3 id="taglines">Taglines/Slogans</h3>
+<h3 id="taglines">Taglines/Slogans/Verbiage</h3>
 
 Long : : (**291** characters)
 > Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.

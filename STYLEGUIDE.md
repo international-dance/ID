@@ -44,9 +44,9 @@
 
 <h3 id="color-palletes">COLOR PALLETES : :</h3>
 
-> Contrasting the background of sharp primary colors: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
+> * **Contrasting the background of sharp primary colors**: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
 
-> Ensure sufficient contrast between text and background colors to meet [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
+> * Ensure sufficient contrast between text and background colors to meet [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
 <br>
 
@@ -123,8 +123,8 @@ Representations in various color formats : :
 
 ### Usage : :
 
-> **Primary Colors:** Utilize black and white as foundational colors for primary design elements such as backgrounds, gradients, and text.<br>
-> **Accent Colors:** Apply soft and or muted hues such as pinks, reds, purples, and blues to offset and or highlight specific sections, calls to actions, or decorative elements to add warmth and sophistication.<br>
+> * **Primary Colors:** Utilize black and white as foundational colors for primary design elements such as backgrounds, gradients, and text.<br>
+> * **Accent Colors:** Apply soft and or muted hues such as pinks, reds, purples, and blues to offset and or highlight specific sections, calls to actions, or decorative elements to add warmth and sophistication.<br>
 > By thoughtfully integrating these soft and muted tones with black and white, the design achieves a modern, inviting, and elegant aesthetic.
 
 <br>

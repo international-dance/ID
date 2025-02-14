@@ -4,7 +4,7 @@ The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/
 
 > _Work in progress (WIP) - [ 2025.02.14 ]_
 
-## INTRODUCTION
+<h2 id="taglines">TAGLINES/SLOGANS</h2>
 
 Long : : (**291** characters)
 > * Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.

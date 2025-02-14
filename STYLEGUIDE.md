@@ -30,9 +30,9 @@
 
 ## MEDIA PACKAGE
 
-> * [x] Contents : : All current branding and fonts<br>
-> * [x] Dated : : 2025.02.11<br>
-> * [x] Size : : 2.5MB<br>
+> * [x] **Contents** : : All current branding and fonts<br>
+> * [x] **Dated** : : 2025.02.11<br>
+> * [x] **Size** : : 2.5MB<br>
 > Link : :[International Dance Media Package Download](https://github.com/international-dance/ID/raw/refs/heads/main/assets/2025.02.11_media_package.zip)
 
 
@@ -140,10 +140,10 @@ Representations in various color formats : :
 ![International Dance Wordmark](./assets/images/logos/wordmark.svg)
 
 ### Attributes : :
-> - Type: Scalable Vector Graphic (SVG)
-> - Color(s): black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
->   - Web = conditional/dynamic (depending on individual operating systems user preferences) 
->   - Imagery = static
+> - **Type:** Scalable Vector Graphic (SVG)
+> - **Color(s):** black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - **Web** = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - **Rastered** = static
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -171,10 +171,10 @@ Representations in various color formats : :
 ![International Dance Crest](./assets/images/logos/crest.svg)
 
 ### Attributes : :
-> - Type: Scalable Vector Graphic (SVG)
-> - Color(s): black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
->   - Web = conditional/dynamic (depending on individual operating systems user preferences) 
->   - Imagery = static
+> - **Type:** Scalable Vector Graphic (SVG)
+> - **Color(s):** black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - **Web** = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - **Imagery** = static
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -201,10 +201,10 @@ Representations in various color formats : :
 <!-- ![International Dance Crest](./assets/images/logos/toeshoe.svg) -->
 
 ### Attributes : :
-> - Type: Scalable Vector Graphic (SVG)
-> - Color(s): black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
->   - Web = conditional/dynamic (depending on individual operating systems user preferences) 
->   - Imagery = static
+> - **Type:** Scalable Vector Graphic (SVG)
+> - **Color(s):** black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - **Web** = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - **Imagery** = static
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:

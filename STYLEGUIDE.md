@@ -7,25 +7,25 @@ The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/
 <h2 id="taglines">TAGLINES/SLOGANS</h2>
 
 Long : : (**291** characters)
-> * Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
+> Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
 
 Medium : : (**109** characters)
-> * International Dance has been inspiring generations of dancers since 1962 through award winning passion and excellence.
+> International Dance has been inspiring generations of dancers since 1962 through award winning passion and excellence.
 
 Medium (without "International Dance has been") : : (**87** characters)
-> * Inspiring generations of dancers since 1962 through award winning passion and excellence.
+> Inspiring generations of dancers since 1962 through award winning passion and excellence.
 
 Short : : (**25** characters)
-> * Happiness Through Dancing!
+> Happiness Through Dancing!
 
 
 <h3 id="brand-overview">Brand Overview : :</h3>
 
-> Background : :
-> * Foundational [primary colors](#color-palletes) (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence
+Background : :
+> Foundational [primary colors](#color-palletes) (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence
 
-> Foreground : :
-> * Highlights offset and balanced with soft and or muted pinks, reds, purples, and blues - symbolizing grace, poise, beauty, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
+Foreground : :
+> Highlights offset and balanced with soft and or muted pinks, reds, purples, and blues - symbolizing grace, poise, beauty, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
 
 <h3 id="mission-statement">Mission Statement : :</h3>
 

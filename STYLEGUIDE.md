@@ -4,7 +4,19 @@ The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/
 
 > _Work in progress (WIP) - [ 2025.02.14 ]_
 
-<h2 id="taglines">TAGLINES/SLOGANS</h2>
+<h2 id="mission-statement">Mission Statement : :</h2>
+
+> To preserve and further the vision of founder Christina Heimlich by investing into each student a high-quality dance education, nurturing discipline, physicality, respect, and confidence.
+
+<h3 id="brand-overview">Brand Overview/Look and Feel : :</h3>
+
+Background : :
+> Foundational [primary colors](#color-palletes) (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence
+
+Foreground : :
+> Highlights offset and balanced with soft and or muted pinks, reds, purples, and blues - symbolizing grace, poise, beauty, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
+
+<h3 id="taglines">Taglines/Slogans</h3>
 
 Long : : (**291** characters)
 > Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
@@ -18,18 +30,6 @@ Medium (without "International Dance has been") : : (**87** characters)
 Short : : (**25** characters)
 > Happiness Through Dancing!
 
-
-<h3 id="brand-overview">Brand Overview/Look and Feel : :</h3>
-
-Background : :
-> Foundational [primary colors](#color-palletes) (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence
-
-Foreground : :
-> Highlights offset and balanced with soft and or muted pinks, reds, purples, and blues - symbolizing grace, poise, beauty, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
-
-<h3 id="mission-statement">Mission Statement : :</h3>
-
-> To preserve and further the vision of founder Christina Heimlich by investing into each student a high-quality dance education, nurturing discipline, physicality, respect, and confidence. 
 
 <br>
 
@@ -132,9 +132,13 @@ Representations in various color formats : :
 
 ### Usage : :
 
-> **Primary Colors:** Utilize black and white as foundational colors for primary design elements such as backgrounds, gradients, and text.<br>
-> **Accent Colors:** Apply soft and or muted hues such as pinks, reds, purples, and blues to offset and or highlight specific sections, calls to actions, or decorative elements to add warmth and sophistication.<br>
-> By thoughtfully integrating these soft and muted tones with black and white, the design achieves a modern, inviting, and elegant aesthetic.
+Primary Colors : :
+> Utilize black and white as foundational colors for primary design elements such as backgrounds, gradients, and text.
+
+Accent Colors : :
+> Apply soft and or muted hues such as pinks, reds, purples, and blues to offset and or highlight specific sections, calls to actions, or decorative elements to add warmth and sophistication.
+
+By thoughtfully integrating these soft and muted tones with black and white, the design achieves a modern, inviting, and elegant aesthetic.
 
 <br>
 

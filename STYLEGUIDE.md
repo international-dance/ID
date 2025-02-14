@@ -45,7 +45,7 @@ Short : : (**25** characters)
 Titled01 : : (**262** characters)
 > **Intrrnational Dance - Premier Ballet Studio in Annandale, VA**<br>
 Build confidence, discipline, and a passion for dance with expert instruction in ballet, tap, lyrical, and modern. We offer a supportive, non-competitive environment where dancers grow in skill, character, and community.<br>
-_Now Enrolling – Join Our Dance Family!_
+_Now Enrolling – Join the International Dance Dance Family!_
 
 Titled02 : : (**191** characters)
 > **Intrrnational Dance - Inspiring Dancers Since 1962**<br>

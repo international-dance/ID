@@ -323,7 +323,11 @@ By adhering to these contrast ratios, you can ensure that your content is access
 
 <br>
 
-##Tags : :
+---
+
+<br>
+
+## Tags : :
 
 Dance Studio / Local Discovery:
 > #DanceStudio #DanceClasses #BalletForKids #AnnandaleVA #DanceStudioNearMe #KidsDanceLessons #NorthernVirginiaDance #AfterSchoolActivities

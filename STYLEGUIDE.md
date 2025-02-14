@@ -142,8 +142,8 @@ Representations in various color formats : :
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
 > - Color(s):
->   - Web = conditional/dynamic (OS level light/dark mode driven color schemes.)
->   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - Web = conditional/dynamic (depending on individual operating systems user preferences) : : black or white 
+>   - Imagery = static : :  black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -173,8 +173,8 @@ Representations in various color formats : :
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
 > - Color(s):
->   - Web = conditional/dynamic
->   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - Web = conditional/dynamic (depending on individual operating systems user preferences) : : black or white 
+>   - Imagery = static : :  black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -203,8 +203,8 @@ Representations in various color formats : :
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
 > - Color(s):
->   - Web = conditional/dynamic
->   - Static imagery = black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - Web = conditional/dynamic (depending on individual operating systems user preferences) : : black or white 
+>   - Imagery = static : :  black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -214,7 +214,7 @@ Representations in various color formats : :
 > * Rive
 
 ### Usage : :
-> - Primarily used as the "I" in the [International Dance wordmark](#wordmark), and the favicon for the [International.Dance](https://international.dance/).
+> - Primarily used as the "I" in the [International Dance wordmark](#wordmark), and as the favicon for the [International.Dance website](https://international.dance/) to establish and or reinforce brand individuality and outstanding class.
 > - May NOT be used without International Dance context.
 > - Maintain color contrast accessibility standards for online media and documentation. 
 

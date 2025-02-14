@@ -293,4 +293,4 @@ These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:
 
 <br>
 
-By adhering to this style guide, International Dance can maintain a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for its audience.
+By adhering to this "_single source of truth_" style guide, International Dance can maintain a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for its audience.

@@ -42,7 +42,7 @@ Medium (without "International Dance has been") : : (**87** characters)
 Short : : (**25** characters)
 > Happiness Through Dancing!
 
-Titled01 : : (**262** characters)
+Titled01 : : (**249** characters)
 > **Intrrnational Dance - Premier Ballet Studio in Annandale, VA**<br>
 Build confidence, discipline, and a passion for dance with expert instruction in ballet, tap, lyrical, and modern. We offer a supportive, non-competitive environment where dancers grow in skill, character, and community.<br>
 _Now Enrolling – Join the International Dance Dance Family!_

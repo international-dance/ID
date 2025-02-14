@@ -19,7 +19,7 @@ Short : : (**25** characters)
 > Happiness Through Dancing!
 
 
-<h3 id="brand-overview">Brand Overview : :</h3>
+<h3 id="brand-overview">Brand Overview/Look and Feel : :</h3>
 
 Background : :
 > Foundational [primary colors](#color-palletes) (black (#000000) and white (#FFFFFF)) - two sharp extremes that symbolize discipline, confidence, high-class, and excellence

@@ -171,7 +171,7 @@ By thoughtfully integrating these soft and muted tones with black and white, the
 >   - **Rastered** = static
 
 ### Compatibility : :
-> Designed to seamlessly integrate with industry-standard software:
+Designed to seamlessly integrate with industry-standard software:
 > * Adobe Creative Suite (Photoshop, Illustrator, After Effects)
 > * Affinity Designer
 > * Figma
@@ -202,7 +202,7 @@ By thoughtfully integrating these soft and muted tones with black and white, the
 >   - **Imagery** = static
 
 ### Compatibility : :
-> Designed to seamlessly integrate with industry-standard software:
+Designed to seamlessly integrate with industry-standard software:
 > * Adobe Creative Suite (Photoshop, Illustrator, After Effects)
 > * Affinity Designer
 > * Figma
@@ -232,7 +232,7 @@ By thoughtfully integrating these soft and muted tones with black and white, the
 >   - **Imagery** = static
 
 ### Compatibility : :
-> Designed to seamlessly integrate with industry-standard software:
+Designed to seamlessly integrate with industry-standard software:
 > * Adobe Creative Suite (Photoshop, Illustrator, After Effects)
 > * Affinity Designer
 > * Figma
@@ -283,7 +283,7 @@ For enhanced accessibility ([Level AAA](https://www.w3.org/WAI/WCAG2AAA-Conforma
 
 These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:** Contrast (Enhanced)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html).
 
-> By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
+By adhering to these contrast ratios, you can ensure that your content is accessible to individuals with visual impairments, including those with color vision deficiencies.
 
 <br>
 

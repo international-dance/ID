@@ -373,7 +373,9 @@ Combining Location + Dance for Reach:
 
 ### TikTok
 > #InternationalDance #DanceTok #KidsDance #BalletTok #DanceStudioNearMe #LearnToDance #TinyDancer #DanceChallenge #NowEnrolling #DancersOfTikTok #StudioLife
-Nextdoor – Neighborhood-based, no hashtags, but post in “Local Services” & “Kids Activities” categories.
+
+### Nextdoor – Neighborhood-based 
+No hashtags, but post in “Local Services” & “Kids Activities” categories.
 
 ### Pinterest
 > #InternationalDance #DanceStudio #BalletForKids #AfterSchoolActivities #KidsDance #AnnandaleVA #DanceClassesNearMe #DanceEducation #CreativeKids #ParentTips #NorthernVirginiaParents

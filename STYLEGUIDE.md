@@ -321,22 +321,47 @@ By adhering to these contrast ratios, you can ensure that your content is access
 > * To include all internal and external printed documentation and advertising materials.
 > * _(Detailed layouts, examples, and templates coming soon.)_
 
+By adhering to this [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/wiki/Single_source_of_truth) style guide, International Dance can maintain a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for audiences.
+
 <br>
 
 ---
 
 <br>
 
-## TAGS : :
+## SOCIAL MEDIA HASHTAGS : :
 
 Dance Studio / Local Discovery:
 > #DanceStudio #DanceClasses #BalletForKids #AnnandaleVA #DanceStudioNearMe #KidsDanceLessons #NorthernVirginiaDance #AfterSchoolActivities
 
+First-Time Customers & Studio Growth:
+> #InternationalDance #AnnandaleDance #DanceClassesVA #BalletStudio #TapDance #LyricalDance #ModernDance #KidsDanceClasses #DanceForBeginners #BuildConfidence #DanceJoy #NonCompetitiveDance #DanceFamily #NowEnrolling #DanceWithUs #VAParents #FutureDancer #InspiringDancers #DanceStudioLife #StartDancing
+
 YouTube Algorithm Boosters (Broad + Dance Focused):
-> #DanceTutorial #BeginnerDance #KidsDance #DancePerformance #LearnToDance #BalletBasics #TapDanceLessons #LyricalDanceRoutine #ModernDanceChoreography #DanceVlog #DanceFamily #DanceEducation
+> #BeginnerDance #KidsDance #DancePerformance #LearnToDance #BalletBasics #TapDanceLessons #LyricalDanceRoutine #ModernDanceChoreography #DanceFamily #DanceEducation
 
 YouTube-Specific Search Tags (Engagement Boost):
 > #SubscribeNow #Shorts #YouTubeKids #DanceShorts #ViralDance #DanceJourney #BehindTheScenes #JoinOurStudio #NowEnrolling #EnrollNow
+
+Map/Search-Oriented:
+> #DanceStudioNearMe #BalletClassesNearMe #KidsDanceNearMe #AnnandaleDanceStudio #DanceLessonsVA #BalletNearMe #TapDanceNearMe #LyricalDanceNearMe #ModernDanceNearMe #DanceClassesForKids #AfterSchoolNearMe #KidsActivitiesNearMe
+
+Combining with Your Existing Set for Reach:
+> #BalletStudio #DanceClasses #AnnandaleVA #KidsActivities #BalletForKids #DanceEducation #GraceAndPoise #DanceCommunity #NOVAKids #AfterSchoolActivities #BalletLife #DanceStudioNearMe #DanceClassesNearMe
+
+Instagram  (Dance Studio + Local Focus):
+
+Local & Discovery:
+> #AnnandaleVA #NorthernVirginia #NOVA #DMVDance #DanceStudioNearMe #KidsActivitiesVA #AfterSchoolVA #VAParents
+
+Dance Community & Studio Life:
+> #BalletStudio #DanceClasses #DanceFamily #DanceCommunity #BalletForKids #KidsDance #GraceAndPoise #TinyDancer #YoungDancers #FutureBallerina
+
+Engagement & Trending:
+> #InspireDance #LoveToDance #DanceJoy #DancersOfInstagram #DanceMom #NowEnrolling #JoinOurStudio #DanceGoals #BalletLife #TapDance #LyricalDance #ModernDance #DanceInspiration #KeepDancing
+
+Combining Location + Dance for Reach:
+> #AnnandaleDance #NOVAParents #DMVKids #DanceClassesForKids #DanceLessonsVA
 
 <br>
 
@@ -344,4 +369,4 @@ YouTube-Specific Search Tags (Engagement Boost):
 
 <br>
 
-By adhering to this [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/wiki/Single_source_of_truth) style guide, International Dance can maintain a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for audiences.
+

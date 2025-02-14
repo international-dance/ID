@@ -8,6 +8,12 @@ The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/
 
 > To preserve and further the vision of founder Christina Heimlich by investing into each student a high-quality dance education, nurturing discipline, physicality, respect, and confidence.
 
+<br>
+
+---
+
+<br>
+
 <h3 id="brand-overview">Brand Overview/Look and Feel : :</h3>
 
 Background : :
@@ -15,6 +21,12 @@ Background : :
 
 Foreground : :
 > Highlights offset and balanced with soft and or muted pinks, reds, purples, and blues - symbolizing grace, poise, beauty, and elegance. Together they symbolize a backdrop of excellence complimented with costumes of elegance.
+
+<br>
+
+---
+
+<br>
 
 <h3 id="taglines">Taglines/Slogans</h3>
 

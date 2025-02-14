@@ -337,6 +337,8 @@ Dance Studio / Local Discovery:
 First-Time Customers & Studio Growth:
 > #InternationalDance #AnnandaleDance #DanceClassesVA #BalletStudio #TapDance #LyricalDance #ModernDance #KidsDanceClasses #DanceForBeginners #BuildConfidence #DanceJoy #NonCompetitiveDance #DanceFamily #NowEnrolling #DanceWithUs #VAParents #FutureDancer #InspiringDancers #DanceStudioLife #StartDancing
 
+### Youtube
+
 YouTube Algorithm Boosters (Broad + Dance Focused):
 > #BeginnerDance #KidsDance #DancePerformance #LearnToDance #BalletBasics #TapDanceLessons #LyricalDanceRoutine #ModernDanceChoreography #DanceFamily #DanceEducation
 
@@ -346,10 +348,10 @@ YouTube-Specific Search Tags (Engagement Boost):
 Map/Search-Oriented:
 > #DanceStudioNearMe #BalletClassesNearMe #KidsDanceNearMe #AnnandaleDanceStudio #DanceLessonsVA #BalletNearMe #TapDanceNearMe #LyricalDanceNearMe #ModernDanceNearMe #DanceClassesForKids #AfterSchoolNearMe #KidsActivitiesNearMe
 
-Combining with Your Existing Set for Reach:
+Combining with Existing Set for Reach:
 > #BalletStudio #DanceClasses #AnnandaleVA #KidsActivities #BalletForKids #DanceEducation #GraceAndPoise #DanceCommunity #NOVAKids #AfterSchoolActivities #BalletLife #DanceStudioNearMe #DanceClassesNearMe
 
-Instagram  (Dance Studio + Local Focus):
+### Instagram  (Dance Studio + Local Focus):
 
 Local & Discovery:
 > #AnnandaleVA #NorthernVirginia #NOVA #DMVDance #DanceStudioNearMe #KidsActivitiesVA #AfterSchoolVA #VAParents

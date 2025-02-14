@@ -285,7 +285,8 @@ These enhanced contrast requirements are outlined in [Success Criterion **1.4.6:
 
 ## DOCUMENTATION 
 
-> * _(Detailed instructions, examples, and templates coming soon.)_
+> * To include all internal and external printed documentation and advertising materials.
+> * _(Detailed layouts, examples, and templates coming soon.)_
 
 <br>
 

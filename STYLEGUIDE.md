@@ -365,6 +365,23 @@ Engagement & Trending:
 Combining Location + Dance for Reach:
 > #AnnandaleDance #NOVAParents #DMVKids #DanceClassesForKids #DanceLessonsVA
 
+### Facebook
+> #InternationalDance #AnnandaleDance #LocalDanceStudio #KidsDanceVA #DanceLessonsNearMe #FamilyActivitiesVA #BalletStudio #DanceClassesForKids #NowEnrolling #DanceFamily
+
+### TikTok
+> #InternationalDance #DanceTok #KidsDance #BalletTok #DanceStudioNearMe #LearnToDance #TinyDancer #DanceChallenge #NowEnrolling #DancersOfTikTok #StudioLife
+Nextdoor – Neighborhood-based, no hashtags, but post in “Local Services” & “Kids Activities” categories.
+
+### Pinterest
+> #InternationalDance #DanceStudio #BalletForKids #AfterSchoolActivities #KidsDance #AnnandaleVA #DanceClassesNearMe #DanceEducation #CreativeKids #ParentTips #NorthernVirginiaParents
+
+### Google Business Profile
+Posts with keywords, not hashtags:<br>
+> “International Dance | Annandale Ballet Studio | Kids Dance Classes | Ballet, Tap, Lyrical, Modern | Since 1962 | Enroll Now”
+
+Core Cross-Platform Hashtags (Multi-Use):
+> #DanceStudioNearMe #KidsDanceClasses #AnnandaleVA #BalletForKids #DanceFamily #AfterSchoolActivities #DanceLessonsVA #DanceCommunity #NowEnrolling #InspireDance
+
 <br>
 
 ---

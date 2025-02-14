@@ -28,7 +28,7 @@ Foreground : :
 
 <br>
 
-<h3 id="taglines">Taglines/Slogans/Verbiage</h3>
+<h3 id="taglines">Decriptions/Taglines/Slogans/Verbiage</h3>
 
 Long : : (**291** characters)
 > Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
@@ -320,6 +320,19 @@ By adhering to these contrast ratios, you can ensure that your content is access
 
 > * To include all internal and external printed documentation and advertising materials.
 > * _(Detailed layouts, examples, and templates coming soon.)_
+
+<br>
+
+##Tags : :
+
+Dance Studio / Local Discovery:
+> #DanceStudio #DanceClasses #BalletForKids #AnnandaleVA #DanceStudioNearMe #KidsDanceLessons #NorthernVirginiaDance #AfterSchoolActivities
+
+YouTube Algorithm Boosters (Broad + Dance Focused):
+> #DanceTutorial #BeginnerDance #KidsDance #DancePerformance #LearnToDance #BalletBasics #TapDanceLessons #LyricalDanceRoutine #ModernDanceChoreography #DanceVlog #DanceFamily #DanceEducation
+
+YouTube-Specific Search Tags (Engagement Boost):
+> #SubscribeNow #Shorts #YouTubeKids #DanceShorts #ViralDance #DanceJourney #BehindTheScenes #JoinOurStudio #NowEnrolling #EnrollNow
 
 <br>
 

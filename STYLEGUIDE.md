@@ -1,6 +1,8 @@
 # [International.Dance](https://international.dance/) Style Guide
 
-> _Work in progress (WIP) - [ 2025.02.12 ]_
+The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/wiki/Single_source_of_truth) to utilize and adheared to for maintain a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for all audiences.
+
+> _Work in progress (WIP) - [ 2025.02.14 ]_
 
 ## INTRODUCTION
 

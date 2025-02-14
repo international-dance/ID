@@ -331,8 +331,11 @@ By adhering to this [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/w
 
 ## SOCIAL MEDIA HASHTAGS : :
 
+Core Cross-Platform Hashtags (Multi-Use):
+> #InternationalDance #DanceStudioNearMe #KidsDanceClasses #AnnandaleVA #BalletForKids #DanceFamily #AfterSchoolActivities #DanceLessonsVA #DanceCommunity #NowEnrolling #InspireDance
+
 Dance Studio / Local Discovery:
-> #DanceStudio #DanceClasses #BalletForKids #AnnandaleVA #DanceStudioNearMe #KidsDanceLessons #NorthernVirginiaDance #AfterSchoolActivities
+> #InternationalDance #DanceStudio #DanceClasses #BalletForKids #AnnandaleVA #DanceStudioNearMe #KidsDanceLessons #NorthernVirginiaDance #AfterSchoolActivities
 
 First-Time Customers & Studio Growth:
 > #InternationalDance #AnnandaleDance #DanceClassesVA #BalletStudio #TapDance #LyricalDance #ModernDance #KidsDanceClasses #DanceForBeginners #BuildConfidence #DanceJoy #NonCompetitiveDance #DanceFamily #NowEnrolling #DanceWithUs #VAParents #FutureDancer #InspiringDancers #DanceStudioLife #StartDancing
@@ -378,9 +381,6 @@ Nextdoor – Neighborhood-based, no hashtags, but post in “Local Services” &
 ### Google Business Profile
 Posts with keywords, not hashtags:<br>
 > “International Dance | Annandale Ballet Studio | Kids Dance Classes | Ballet, Tap, Lyrical, Modern | Since 1962 | Enroll Now”
-
-Core Cross-Platform Hashtags (Multi-Use):
-> #DanceStudioNearMe #KidsDanceClasses #AnnandaleVA #BalletForKids #DanceFamily #AfterSchoolActivities #DanceLessonsVA #DanceCommunity #NowEnrolling #InspireDance
 
 <br>
 

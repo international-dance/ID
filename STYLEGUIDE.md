@@ -123,9 +123,9 @@ Representations in various color formats : :
 
 ### Usage : :
 
-> **Primary Colors:** Utilize black and white as the foundational colors for backgrounds, text, and primary design elements.<br>
-> **Accent Colors:** Apply soft pink hues to highlight specific sections, calls to action, or decorative elements to add warmth and sophistication.<br>
-> By thoughtfully integrating these soft pink tones with black and white, the design achieves a modern and inviting aesthetic.
+> **Primary Colors:** Utilize black and white as foundational colors for primary design elements such as backgrounds, gradients, and text.<br>
+> **Accent Colors:** Apply soft and or muted hues such as pinks, reds, purples, and blues to offset and or highlight specific sections, calls to actions, or decorative elements to add warmth and sophistication.<br>
+> By thoughtfully integrating these soft and muted tones with black and white, the design achieves a modern, inviting, and elegant aesthetic.
 
 <br>
 

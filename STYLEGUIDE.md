@@ -141,9 +141,9 @@ Representations in various color formats : :
 
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
-> - Color(s):
->   - Web = conditional/dynamic (depending on individual operating systems user preferences) : : black or white 
->   - Imagery = static : :  black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+> - Color(s): black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - Web = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - Imagery = static
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -172,9 +172,9 @@ Representations in various color formats : :
 
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
-> - Color(s):
->   - Web = conditional/dynamic (depending on individual operating systems user preferences) : : black or white 
->   - Imagery = static : :  black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+> - Color(s): black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - Web = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - Imagery = static
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:
@@ -202,9 +202,9 @@ Representations in various color formats : :
 
 ### Attributes : :
 > - Type: Scalable Vector Graphic (SVG)
-> - Color(s):
->   - Web = conditional/dynamic (depending on individual operating systems user preferences) : : black or white 
->   - Imagery = static : :  black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+> - Color(s): black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
+>   - Web = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - Imagery = static
 
 ### Compatibility : :
 > Designed to seamlessly integrate with industry-standard software:

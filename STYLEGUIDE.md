@@ -1,8 +1,8 @@
 # [International.Dance](https://international.dance/) Style Guide
 
-The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/wiki/Single_source_of_truth) for maintaining a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for all audiences.
+The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/wiki/Single_source_of_truth) for organizing, streamlining, and maintaining a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for all audiences.
 
-> _Work in progress (WIP) - [ 2025.02.14 ]_
+> _Work in progress (WIP) - [ 2025.02.15 ]_
 
 <h2 id="mission-statement">Mission Statement : :</h2>
 

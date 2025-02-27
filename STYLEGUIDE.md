@@ -2,7 +2,7 @@
 
 The style guide is a [Single Source Of Truth (SSOT)](https://en.m.wikipedia.org/wiki/Single_source_of_truth) for organizing, streamlining, and maintaining a consistent and professional appearance across all platforms, ensuring a cohesive brand experience for all audiences.
 
-> _Work in progress (WIP) - [ 2025.02.15 ]_
+> _Work in progress (WIP) - [ 2025.02.27 ]_
 
 <h2 id="mission-statement">Mission Statement : :</h2>
 
@@ -30,24 +30,24 @@ Foreground : :
 
 <h3 id="taglines">Decriptions/Taglines/Slogans/Verbiage</h3>
 
-Long : : (**291** characters)
+Long : : [ **291** characters ]
 > Founded in 1962, International Dance has inspired dancers for generations through award winning passion and excellence. The [Northern VA](https://maps.app.goo.gl/EzxcxwVSJr2d2s3q9) non-competitive premier school of dance offers classical ballet, tap, jazz, modern, lyrical, folk, and character dance instruction year-round for ages three to adult.
 
-Medium : : (**109** characters)
+Medium : :  [ **109** characters ]
 > International Dance has been inspiring generations of dancers since 1962 through award winning passion and excellence.
 
-Medium (without "International Dance has been") : : (**87** characters)
+Medium (without "International Dance has been") : : [ **87** characters ]
 > Inspiring generations of dancers since 1962 through award winning passion and excellence.
 
-Short : : (**25** characters)
+Short : : [ **25** characters ]
 > Happiness Through Dancing!
 
-Titled01 : : (**249** characters)
+Titled01 : : [ **249** characters ]
 > **Intrrnational Dance - Premier Ballet Studio in Annandale, VA**<br>
 Build confidence, discipline, and a passion for dance with expert instruction in ballet, tap, lyrical, and modern. We offer a supportive, non-competitive environment where dancers grow in skill, character, and community.<br>
 _Now Enrolling – Join the International Dance Dance Family!_
 
-Titled02 : : (**191** characters)
+Titled02 : : [ **191** characters ]
 > **Intrrnational Dance - Inspiring Dancers Since 1962**<br>
 Welcoming new dancers! Beginner to expert ballet, tap, lyrical, and modern instruction in a supportive, non-competitive studio atmosphere. Build confidence, skill & joy. Enroll now!
 

@@ -45,7 +45,7 @@ Short : : [ **25** characters ]
 Titled01 : : [ **249** characters ]
 > **Intrrnational Dance - Premier Ballet Studio in Annandale, VA**<br>
 Build confidence, discipline, and a passion for dance with expert instruction in ballet, tap, lyrical, and modern. We offer a supportive, non-competitive environment where dancers grow in skill, character, and community.<br>
-_Now Enrolling – Join the International Dance Dance Family!_
+_Now Enrolling - Join the International Dance Dance Family!_
 
 Titled02 : : [ **191** characters ]
 > **Intrrnational Dance - Inspiring Dancers Since 1962**<br>
@@ -73,7 +73,7 @@ Welcoming new dancers! Beginner to expert ballet, tap, lyrical, and modern instr
 
 <h3 id="color-palletes">COLOR PALLETES : :</h3>
 
-> **Contrasting the background of sharp primary colors**: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various forground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance. 
+> **Contrasting the background of sharp primary colors**: Black (#000000) and White (#FFFFFF), symbolizing foundational discipline, high-class, and excellence, are various foreground soft and or muted pinks, reds, purples, and blues are, symbolizing grace, poise, and elegance.
 
 > Ensure sufficient contrast between text and background colors to meet [**WCAG 2.1 AA**](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) standards (see [Accessibility](#accessibility) below).
 
@@ -165,7 +165,7 @@ By thoughtfully integrating these soft and muted tones with black and white, the
 ---
 
 <br>
-  
+
 ## LOGO(S)
 
 <h3 id="wordmark">INTERNATIONAL DANCE WORDMARK : :</h3>
@@ -175,7 +175,7 @@ By thoughtfully integrating these soft and muted tones with black and white, the
 ### Attributes : :
 > - **Type:** Scalable Vector Graphic (SVG)
 > - **Color(s):** black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
->   - **Web** = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - **Web** = conditional/dynamic (depending on individual operating systems user preferences)
 >   - **Rastered** = static
 
 ### Compatibility : :
@@ -193,7 +193,7 @@ Designed to seamlessly integrate with industry-standard software:
 
 ### Font : :
 
-> - **Font Name(s):** 
+> - **Font Name(s):**
 >   - [Times New Roman](/assets/fonts/times.ttf)
 > - **Weight(s):** Regular
 
@@ -206,7 +206,7 @@ Designed to seamlessly integrate with industry-standard software:
 ### Attributes : :
 > - **Type:** Scalable Vector Graphic (SVG)
 > - **Color(s):** black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
->   - **Web** = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - **Web** = conditional/dynamic (depending on individual operating systems user preferences)
 >   - **Imagery** = static
 
 ### Compatibility : :
@@ -217,8 +217,8 @@ Designed to seamlessly integrate with industry-standard software:
 > * Rive
 
 ### Usage : :
-> - Should be used as a backgroud image (watermark) or as part of a marketing presentation title page.
-> - Maintain color contrast accessibility standards for online media and documentation. 
+> - Should be used as a background image (watermark) or as part of a marketing presentation title page.
+> - Maintain color contrast accessibility standards for online media and documentation.
 
 ### Font : :
 
@@ -236,7 +236,7 @@ Designed to seamlessly integrate with industry-standard software:
 ### Attributes : :
 > - **Type:** Scalable Vector Graphic (SVG)
 > - **Color(s):** black (#000000) on light backgrounds or white (#FFFFFF) on dark backgrounds
->   - **Web** = conditional/dynamic (depending on individual operating systems user preferences) 
+>   - **Web** = conditional/dynamic (depending on individual operating systems user preferences)
 >   - **Imagery** = static
 
 ### Compatibility : :
@@ -249,7 +249,7 @@ Designed to seamlessly integrate with industry-standard software:
 ### Usage : :
 > - Primarily used as the "I" in the [International Dance wordmark](#wordmark), and as the favicon for the [International.Dance website](https://international.dance/) to establish and or reinforce brand individuality and outstanding class.
 > - May NOT be used without International Dance context.
-> - Maintain color contrast accessibility standards for online media and documentation. 
+> - Maintain color contrast accessibility standards for online media and documentation.
 
 ### Font : :
 
@@ -299,7 +299,7 @@ By adhering to these contrast ratios, you can ensure that your content is access
 
 <br>
 
-## FIGMA IMPLEMETATION
+## FIGMA IMPLEMENTATION
 
 ### Styles : :
 
@@ -316,7 +316,7 @@ By adhering to these contrast ratios, you can ensure that your content is access
 
 <br>
 
-## DOCUMENTATION 
+## DOCUMENTATION
 
 > * To include all internal and external printed documentation and advertising materials.
 > * _(Detailed layouts, examples, and templates coming soon.)_
@@ -389,5 +389,3 @@ Posts with keywords, not hashtags:<br>
 ---
 
 <br>
-
-

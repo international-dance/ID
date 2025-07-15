@@ -1,16 +1,31 @@
 {
   "cSpell.words": [
+    "Annandale",
     "autoplay",
+    "bpeh",
     "Brinkmann",
     "btns",
+    "CMYK",
     "corbell",
+    "Decriptions",
+    "Favicons",
     "Filipy",
     "footlighti",
     "footlightl",
+    "FTLTLT",
+    "Hockenberry",
+    "Intrrnational",
     "Oxanium",
+    "Pantone",
+    "Pinterest",
+    "Rastered",
     "Schroth",
     "SCROLLBARS",
-    "shopnimbly"
+    "shopnimbly",
+    "SSOT",
+    "stackoverflow",
+    "wordmark",
+    "zwguowd"
   ],
   "css.hover.documentation": false,
   "css.hover.references": false,
@@ -33,5 +48,6 @@
         }
       }
     ]
-  }
+  },
+  "liveServer.settings.port": 5501
 }

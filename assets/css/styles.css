@@ -181,14 +181,14 @@ div {
 
 .slide-des {
   text-align: center;
-  line-height: 25px;
-  border-width: 0px;
-  padding: 0px 0px 25px;
-  letter-spacing: 0px;
+  /* line-height: 25px; */
+  border-width: 0;
+  padding: 0 0 25px;
+  letter-spacing: 0;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.5rem;
   white-space: normal;
-  min-height: 0px;
+  min-height: 0;
   /* min-width: 347px; */
   max-height: none;
   max-width: 400px;
@@ -196,6 +196,10 @@ div {
   margin: auto;
   opacity: 0;
   text-wrap: pretty;
+
+  a {
+    font-size: 18px;
+  }
 }
 .swiper-slide-active .slide-des {
   transition: opacity 0.5s ease, filter 0.5s ease;
@@ -206,9 +210,9 @@ div {
   text-align: inherit;
   line-height: 27px;
   border-width: 1px;
-  margin: 0px;
+  margin: 0;
   padding: 18px 70px 18px 46px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;

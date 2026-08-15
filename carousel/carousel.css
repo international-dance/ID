@@ -2,7 +2,7 @@
 
 @property --ring {
   syntax: "<percentage>";
-  inherits: false;
+  inherits: true;
   initial-value: 0%;
 }
 
@@ -270,36 +270,54 @@
       animation: --advance 10s steps(1, jump-end) forwards;
     }
 
+    /* The ring is the same countdown: same element, same start, same
+       duration, same resets. Anything on its own clock drifts. */
+    figure:has(:target-current) {
+      animation: --advance 10s steps(1, jump-end) forwards,
+        --fill-ring 10s linear forwards;
+    }
+
+    figure:has(:target-current)::before {
+      content: "";
+      position: absolute;
+      position-anchor: --carousel;
+      left: calc(anchor(left) + 0.75rem);
+      align-self: anchor-center;
+      inline-size: 3rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: conic-gradient(var(--accent) var(--ring), var(--track) 0);
+      mask: radial-gradient(closest-side, transparent calc(100% - 0.3rem), black 0);
+    }
+
     section:has(figure:last-child :target-current) {
       animation: --rewind 10s steps(1, jump-end) forwards;
     }
 
     /* Interaction that does not change the item still resets the countdown:
        focus and press each swap in an identical animation under a new name. */
-    section:focus-within figure:has(:target-current),
     section:focus-within figure:has(+ figure :target-current) {
       animation-name: --advance-b;
+    }
+
+    section:focus-within figure:has(:target-current) {
+      animation-name: --advance-b, --fill-ring-b;
     }
 
     section:focus-within:has(figure:last-child :target-current) {
       animation-name: --rewind-b;
     }
 
-    section:focus-within::scroll-button(left) {
-      animation-name: --fill-ring-b;
+      section:active figure:has(+ figure :target-current) {
+      animation-name: --advance-c;
     }
 
-    section:active figure:has(:target-current),
-    section:active figure:has(+ figure :target-current) {
-      animation-name: --advance-c;
+    section:active figure:has(:target-current) {
+      animation-name: --advance-c, --fill-ring-c;
     }
 
     section:active:has(figure:last-child :target-current) {
       animation-name: --rewind-c;
-    }
-
-    section:active::scroll-button(left) {
-      animation-name: --fill-ring-c;
     }
 
     /* Only the first item keeps a snap position, so the carousel wraps to it */
@@ -427,9 +445,7 @@
     font-size: 1.5rem;
     line-height: 1;
     cursor: pointer;
-    background:
-      radial-gradient(closest-side, Canvas calc(100% - 0.3rem), transparent 0),
-      conic-gradient(var(--accent) var(--ring), var(--track) 0);
+    background: radial-gradient(closest-side, Canvas calc(100% - 0.3rem), transparent 0);
   }
 
   section::scroll-button(*):disabled {
@@ -451,7 +467,7 @@
   section::scroll-button(left) {
     content: "\2039" / "Previous";
     left: calc(anchor(left) + 0.75rem);
-    animation: --fill-ring 10s linear infinite;
+    z-index: 1;
   }
 
   /* Right ring: how far through the carousel the reader has scrolled */

@@ -6,13 +6,31 @@
   initial-value: 0%;
 }
 
-@keyframes --advance {
-  0% {
-    scroll-snap-align: none;
+@property --phase {
+  syntax: "<custom-ident>";
+  inherits: true;
+  initial-value: wait;
+}
+
+/* The wait before the first auto-forward is 10s; every one after it is 5s */
+@keyframes --pace {
+  from {
+    --phase: wait;
   }
 
-  100% {
+  to {
+    --phase: run;
+  }
+}
+
+/* Dropping the current item's snap alignment makes the container re-snap forward */
+@keyframes --advance {
+  from {
     scroll-snap-align: start;
+  }
+
+  to {
+    scroll-snap-align: none;
   }
 }
 
@@ -138,6 +156,8 @@
     scroll-padding-inline: var(--pad);
     scrollbar-width: none;
     anchor-name: --carousel;
+    scroll-target-group: auto;
+    animation: --pace 10s steps(1, jump-end) forwards;
     scroll-timeline: --progress inline;
     counter-reset: day;
   }
@@ -155,7 +175,36 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
     scroll-margin-inline-end: max(0px, calc(100vw - var(--item) - 2 * var(--pad)));
-    animation: --advance calc(1s + 5s * (sibling-count() - sibling-index())) steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
+  }
+
+  /* scroll-target-group names the item in view: it counts down, then hands off */
+  figure:has(:target-current) {
+    animation: --advance 5s steps(1, jump-end) forwards;
+  }
+
+  /* Breaks the re-snap tie in favour of the next item rather than the previous one */
+  figure:has(:target-current) + figure {
+    scroll-margin-inline-start: 8px;
+  }
+
+  @container style(--phase: wait) {
+    figure:has(:target-current) {
+      animation-delay: 5s;
+    }
+  }
+
+  figcaption a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  figcaption a:hover {
+    text-decoration: underline;
+  }
+
+  figcaption a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
   }
 
   /* The two section-navigation items are not numbered days */
@@ -241,6 +290,9 @@
   }
 
   /* Any interaction pauses the auto-forward and resets the 10 second timer */
+  section:hover,
+  section:focus-within,
+  section:active,
   section:hover figure,
   section:focus-within figure,
   section:active figure,
@@ -256,7 +308,8 @@
       scroll-behavior: auto;
     }
 
-    figure,
+    section,
+    figure:has(:target-current),
     section::scroll-button(left) {
       animation-name: none;
     }

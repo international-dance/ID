@@ -289,13 +289,21 @@
     animation-timeline: --progress;
   }
 
-  /* Any interaction pauses the auto-forward and resets the 10 second timer */
+  /* Any interaction pauses the auto-forward and resets the 10 second timer.
+     Kept in separate rules so a selector one engine cannot parse only costs
+     that engine the rule it appears in. */
   section:hover,
   section:focus-within,
-  section:active,
+  section:active {
+    animation-name: none;
+  }
+
   section:hover figure,
   section:focus-within figure,
-  section:active figure,
+  section:active figure {
+    animation-name: none;
+  }
+
   section:hover::scroll-button(left),
   section:focus-within::scroll-button(left),
   section:active::scroll-button(left) {
@@ -308,8 +316,14 @@
       scroll-behavior: auto;
     }
 
-    section,
-    figure:has(:target-current),
+    section {
+      animation-name: none;
+    }
+
+    figure:has(:target-current) {
+      animation-name: none;
+    }
+
     section::scroll-button(left) {
       animation-name: none;
     }

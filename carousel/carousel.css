@@ -1,0 +1,264 @@
+@layer carousel;
+
+@property --ring {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes --advance {
+  0% {
+    scroll-snap-align: none;
+  }
+
+  100% {
+    scroll-snap-align: start;
+  }
+}
+
+@keyframes --fill-ring {
+  from {
+    --ring: 0%;
+  }
+
+  to {
+    --ring: 100%;
+  }
+}
+
+@layer carousel {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --item: min(82vw, 34rem);
+    --gap: 1.5rem;
+    --pad: 1.5rem;
+    --surface: light-dark(#fdfbfd, #17131a);
+    --ink: light-dark(#221a26, #f3ecf5);
+    --muted: light-dark(#5c5164, #b9aec0);
+    --accent: light-dark(#8b2f6a, #f0a6d0);
+    --track: light-dark(#0000001f, #ffffff2b);
+
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    margin: 0;
+    padding: 2rem 1.5rem 4rem;
+    background: var(--surface);
+    color: var(--ink);
+    font: 1rem/1.5 system-ui, sans-serif;
+  }
+
+  main {
+    display: grid;
+    justify-items: center;
+  }
+
+  article {
+    display: grid;
+    gap: 2rem;
+    inline-size: min(100%, 64rem);
+  }
+
+  header {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: start;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    line-height: 1.1;
+  }
+
+  header p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  /* Section navigation — semantic document links, tracked by the browser */
+  nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 1rem;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    scroll-target-group: auto;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--track);
+    border-radius: 2rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    border-color: var(--accent);
+  }
+
+  nav a:target-current {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--surface);
+  }
+
+  nav a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  /* The carousel: a native scroll container, full-bleed out of the body padding */
+  section {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: var(--item);
+    gap: var(--gap);
+    inline-size: 100vw;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: var(--pad) max(var(--pad), calc(100vw - var(--item) - var(--pad)));
+    padding-block: 0.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--pad);
+    scrollbar-width: none;
+    anchor-name: --carousel;
+    scroll-timeline: --progress inline;
+    counter-reset: day;
+  }
+
+  section:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: -3px;
+  }
+
+  figure {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    counter-increment: day;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-margin-inline-end: max(0px, calc(100vw - var(--item) - 2 * var(--pad)));
+    animation: --advance calc(1s + 5s * (sibling-count() - sibling-index())) steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
+  }
+
+  /* The two section-navigation items are not numbered days */
+  figure:nth-last-child(-n + 2) {
+    counter-increment: none;
+  }
+
+  img {
+    inline-size: 100%;
+    block-size: clamp(13rem, 40vh, 24rem);
+    border-radius: 0.75rem;
+    object-fit: cover;
+    background: var(--track);
+  }
+
+  figcaption {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  figcaption::before {
+    content: "Day " counter(day) " · ";
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  figure:nth-last-child(-n + 2) figcaption::before {
+    content: none;
+  }
+
+  figure:target img {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  /* Native previous / next controls, positioned against the carousel anchor */
+  section::scroll-button(*) {
+    position: absolute;
+    position-anchor: --carousel;
+    align-self: anchor-center;
+    inline-size: 3rem;
+    aspect-ratio: 1;
+    border: 0;
+    border-radius: 50%;
+    padding: 0;
+    color: var(--ink);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    background:
+      radial-gradient(closest-side, var(--surface) calc(100% - 0.3rem), #0000 0),
+      conic-gradient(var(--accent) var(--ring), var(--track) 0);
+  }
+
+  section::scroll-button(*):disabled {
+    color: var(--muted);
+    cursor: default;
+    opacity: 0.4;
+  }
+
+  section::scroll-button(*):focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  section::scroll-button(*):active {
+    translate: 0 1px;
+  }
+
+  /* Left ring: time remaining before the next automatic advance */
+  section::scroll-button(left) {
+    content: "\2039" / "Previous";
+    left: calc(anchor(left) + 0.75rem);
+    animation: --fill-ring 5s linear 5s infinite;
+  }
+
+  /* Right ring: how far through the carousel the reader has scrolled */
+  section::scroll-button(right) {
+    content: "\203A" / "Next";
+    right: calc(anchor(right) + 0.75rem);
+    animation: --fill-ring linear both;
+    animation-timeline: --progress;
+  }
+
+  /* Any interaction pauses the auto-forward and resets the 10 second timer */
+  section:hover figure,
+  section:focus-within figure,
+  section:active figure,
+  section:hover::scroll-button(left),
+  section:focus-within::scroll-button(left),
+  section:active::scroll-button(left) {
+    animation-name: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :root,
+    section {
+      scroll-behavior: auto;
+    }
+
+    figure,
+    section::scroll-button(left) {
+      animation-name: none;
+    }
+  }
+}

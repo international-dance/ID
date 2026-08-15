@@ -34,6 +34,18 @@
   }
 }
 
+/* Fallback for engines with ::scroll-button() but no scroll-target-group:
+   the item is un-aligned on a staggered timer instead of on its own turn */
+@keyframes --advance-wave {
+  from {
+    scroll-snap-align: none;
+  }
+
+  to {
+    scroll-snap-align: start;
+  }
+}
+
 @keyframes --fill-ring {
   from {
     --ring: 0%;
@@ -185,6 +197,13 @@
   /* Breaks the re-snap tie in favour of the next item rather than the previous one */
   figure:has(:target-current) + figure {
     scroll-margin-inline-start: 8px;
+  }
+
+  @supports not (scroll-target-group: auto) {
+    figure {
+      animation: --advance-wave calc(1s + 5s * (sibling-count() - sibling-index()))
+        steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
+    }
   }
 
   @container style(--phase: wait) {

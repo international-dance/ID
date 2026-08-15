@@ -6,24 +6,15 @@
   initial-value: 0%;
 }
 
-@property --phase {
+@property --rewind-now {
   syntax: "<custom-ident>";
   inherits: true;
-  initial-value: wait;
+  initial-value: no;
 }
 
-/* The wait before the first auto-forward is 10s; every one after it is 5s */
-@keyframes --pace {
-  from {
-    --phase: wait;
-  }
-
-  to {
-    --phase: run;
-  }
-}
-
-/* Dropping the current item's snap alignment makes the container re-snap forward */
+/* Dropping the current item's snap alignment makes the container re-snap forward.
+   -b and -c are identical: swapping animation-name is what restarts a countdown,
+   so every interaction state needs a name of its own. */
 @keyframes --advance {
   from {
     scroll-snap-align: start;
@@ -31,6 +22,58 @@
 
   to {
     scroll-snap-align: none;
+  }
+}
+
+@keyframes --advance-b {
+  from {
+    scroll-snap-align: start;
+  }
+
+  to {
+    scroll-snap-align: none;
+  }
+}
+
+@keyframes --advance-c {
+  from {
+    scroll-snap-align: start;
+  }
+
+  to {
+    scroll-snap-align: none;
+  }
+}
+
+/* On the last item the same countdown un-aligns everything but the first,
+   leaving it as the only snap target: the carousel wraps to the start. */
+@keyframes --rewind {
+  from {
+    --rewind-now: no;
+  }
+
+  to {
+    --rewind-now: yes;
+  }
+}
+
+@keyframes --rewind-b {
+  from {
+    --rewind-now: no;
+  }
+
+  to {
+    --rewind-now: yes;
+  }
+}
+
+@keyframes --rewind-c {
+  from {
+    --rewind-now: no;
+  }
+
+  to {
+    --rewind-now: yes;
   }
 }
 
@@ -56,6 +99,26 @@
   }
 }
 
+@keyframes --fill-ring-b {
+  from {
+    --ring: 0%;
+  }
+
+  to {
+    --ring: 100%;
+  }
+}
+
+@keyframes --fill-ring-c {
+  from {
+    --ring: 0%;
+  }
+
+  to {
+    --ring: 100%;
+  }
+}
+
 @layer carousel {
   *,
   *::before,
@@ -67,13 +130,12 @@
     --item: min(82vw, 34rem);
     --gap: 1.5rem;
     --pad: 1.5rem;
-    --surface: light-dark(#fdfbfd, #17131a);
-    --ink: light-dark(#221a26, #f3ecf5);
-    --muted: light-dark(#5c5164, #b9aec0);
-    --accent: light-dark(#8b2f6a, #f0a6d0);
-    --track: light-dark(#0000001f, #ffffff2b);
+    --accent: light-dark(oklch(0.44 0.15 340), oklch(0.84 0.11 340));
+    --muted: color-mix(in oklch, currentColor 62%, Canvas);
+    --track: color-mix(in oklch, currentColor 18%, Canvas);
 
     color-scheme: light dark;
+    color: CanvasText;
     scroll-behavior: smooth;
     overflow-x: clip;
   }
@@ -81,8 +143,8 @@
   body {
     margin: 0;
     padding: 2rem 1.5rem 4rem;
-    background: var(--surface);
-    color: var(--ink);
+    background: Canvas;
+    color: inherit;
     font: 1rem/1.5 system-ui, sans-serif;
   }
 
@@ -129,7 +191,7 @@
   nav a {
     display: block;
     padding: 0.35rem 0.9rem;
-    border: 1px solid var(--track);
+    border: 0.0625rem solid var(--track);
     border-radius: 2rem;
     color: inherit;
     text-decoration: none;
@@ -142,12 +204,12 @@
   nav a:target-current {
     border-color: var(--accent);
     background: var(--accent);
-    color: var(--surface);
+    color: Canvas;
   }
 
   nav a:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.1875rem;
   }
 
   /* The carousel: a native scroll container, full-bleed out of the body padding */
@@ -169,14 +231,13 @@
     scrollbar-width: none;
     anchor-name: --carousel;
     scroll-target-group: auto;
-    animation: --pace 10s steps(1, jump-end) forwards;
     scroll-timeline: --progress inline;
     counter-reset: day;
   }
 
   section:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: -3px;
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: -0.1875rem;
   }
 
   figure {
@@ -186,37 +247,74 @@
     counter-increment: day;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    scroll-margin-inline-end: max(0px, calc(100vw - var(--item) - 2 * var(--pad)));
+    scroll-margin-inline-end: max(0rem, calc(100vw - var(--item) - 2 * var(--pad)));
   }
 
-  /* scroll-target-group names the item in view: it counts down, then hands off */
-  figure:has(:target-current) {
-    animation: --advance 5s steps(1, jump-end) forwards;
-  }
-
-  /* Breaks the re-snap tie in favour of the next item rather than the previous one */
-  figure:has(:target-current) + figure {
-    scroll-margin-inline-start: 8px;
-  }
-
-  /* Engines without scroll-target-group cannot parse the selector below,
-     so the same fallback is stated once for each way it can be reached. */
-  @supports not (scroll-target-group: auto) {
-    figure {
-      animation: --advance-wave calc(1s + 5s * (sibling-count() - sibling-index()))
-        steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
+  @media (prefers-reduced-motion: no-preference) {
+    /* scroll-target-group names the item in view: it counts down, then hands off.
+       Any change of item starts the next item's countdown from zero. */
+    /* The item behind the current one runs the same countdown and drops its
+       alignment at the same instant. Re-snapping prefers the earlier target
+       whatever the distance, so the nearest one behind has to be two steps
+       away for the carousel to move forward instead of backward. */
+    figure:has(:target-current),
+    figure:has(+ figure :target-current) {
+      animation: --advance 10s steps(1, jump-end) forwards;
     }
-  }
 
-  /* Markup with no scroll markers in it: nothing can report itself current */
-  section:where(:not(:has(:target-current))) figure {
-    animation: --advance-wave calc(1s + 5s * (sibling-count() - sibling-index()))
-      steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
-  }
+    section:has(figure:last-child :target-current) {
+      animation: --rewind 10s steps(1, jump-end) forwards;
+    }
 
-  @container style(--phase: wait) {
-    figure:has(:target-current) {
-      animation-delay: 5s;
+    /* Interaction that does not change the item still resets the countdown:
+       focus and press each swap in an identical animation under a new name. */
+    section:focus-within figure:has(:target-current),
+    section:focus-within figure:has(+ figure :target-current) {
+      animation-name: --advance-b;
+    }
+
+    section:focus-within:has(figure:last-child :target-current) {
+      animation-name: --rewind-b;
+    }
+
+    section:focus-within::scroll-button(left) {
+      animation-name: --fill-ring-b;
+    }
+
+    section:active figure:has(:target-current),
+    section:active figure:has(+ figure :target-current) {
+      animation-name: --advance-c;
+    }
+
+    section:active:has(figure:last-child :target-current) {
+      animation-name: --rewind-c;
+    }
+
+    section:active::scroll-button(left) {
+      animation-name: --fill-ring-c;
+    }
+
+    /* Only the first item keeps a snap position, so the carousel wraps to it */
+    @container style(--rewind-now: yes) {
+      figure:not(:first-child) {
+        scroll-snap-align: none;
+      }
+    }
+
+    /* Engines without scroll-target-group cannot parse the selectors above,
+       so the fallback is stated once for each way it can be reached. It
+       advances on a staggered timer and does not wrap. */
+    @supports not (scroll-target-group: auto) {
+      figure {
+        animation: --advance-wave calc(1s + 10s * (sibling-count() - sibling-index()))
+          steps(1, jump-end) calc(10s * sibling-index()) 1;
+      }
+    }
+
+    /* Markup with no scroll markers in it: nothing can report itself current */
+    section:where(:not(:has(:target-current))) figure {
+      animation: --advance-wave calc(1s + 10s * (sibling-count() - sibling-index()))
+        steps(1, jump-end) calc(10s * sibling-index()) 1;
     }
   }
 
@@ -230,8 +328,8 @@
   }
 
   figcaption a:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.1875rem;
   }
 
   /* The two section-navigation items are not numbered days */
@@ -262,9 +360,9 @@
     content: none;
   }
 
-  figure:target img {
-    outline: 3px solid var(--accent);
-    outline-offset: 4px;
+  figure:has(:target-current) img {
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.25rem;
   }
 
   /* Native previous / next controls, positioned against the carousel anchor */
@@ -277,12 +375,11 @@
     border: 0;
     border-radius: 50%;
     padding: 0;
-    color: var(--ink);
     font-size: 1.5rem;
     line-height: 1;
     cursor: pointer;
     background:
-      radial-gradient(closest-side, var(--surface) calc(100% - 0.3rem), #0000 0),
+      radial-gradient(closest-side, Canvas calc(100% - 0.3rem), transparent 0),
       conic-gradient(var(--accent) var(--ring), var(--track) 0);
   }
 
@@ -293,19 +390,19 @@
   }
 
   section::scroll-button(*):focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.1875rem;
   }
 
   section::scroll-button(*):active {
-    translate: 0 1px;
+    translate: 0 0.0625rem;
   }
 
   /* Left ring: time remaining before the next automatic advance */
   section::scroll-button(left) {
     content: "\2039" / "Previous";
     left: calc(anchor(left) + 0.75rem);
-    animation: --fill-ring 5s linear 5s infinite;
+    animation: --fill-ring 10s linear infinite;
   }
 
   /* Right ring: how far through the carousel the reader has scrolled */
@@ -316,47 +413,10 @@
     animation-timeline: --progress;
   }
 
-  /* Any interaction pauses the auto-forward and resets the 10 second timer.
-     Kept in separate rules so a selector one engine cannot parse only costs
-     that engine the rule it appears in. */
-  section:hover,
-  section:focus-within,
-  section:active {
-    animation-name: none;
-  }
-
-  section:hover figure,
-  section:focus-within figure,
-  section:active figure {
-    animation-name: none;
-  }
-
-  section:hover::scroll-button(left),
-  section:focus-within::scroll-button(left),
-  section:active::scroll-button(left) {
-    animation-name: none;
-  }
-
   @media (prefers-reduced-motion: reduce) {
     :root,
     section {
       scroll-behavior: auto;
-    }
-
-    section {
-      animation-name: none;
-    }
-
-    section figure {
-      animation-name: none;
-    }
-
-    figure:has(:target-current) {
-      animation-name: none;
-    }
-
-    section::scroll-button(left) {
-      animation-name: none;
     }
   }
 }

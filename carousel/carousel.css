@@ -6,12 +6,6 @@
   initial-value: 0%;
 }
 
-@property --rewind-now {
-  syntax: "<custom-ident>";
-  inherits: true;
-  initial-value: no;
-}
-
 /* Dropping the current item's snap alignment makes the container re-snap forward.
    -b and -c are identical: swapping animation-name is what restarts a countdown,
    so every interaction state needs a name of its own. */
@@ -42,38 +36,6 @@
 
   to {
     scroll-snap-align: none;
-  }
-}
-
-/* On the last item the same countdown un-aligns everything but the first,
-   leaving it as the only snap target: the carousel wraps to the start. */
-@keyframes --rewind {
-  from {
-    --rewind-now: no;
-  }
-
-  to {
-    --rewind-now: yes;
-  }
-}
-
-@keyframes --rewind-b {
-  from {
-    --rewind-now: no;
-  }
-
-  to {
-    --rewind-now: yes;
-  }
-}
-
-@keyframes --rewind-c {
-  from {
-    --rewind-now: no;
-  }
-
-  to {
-    --rewind-now: yes;
   }
 }
 
@@ -257,21 +219,16 @@
   @media (prefers-reduced-motion: no-preference) {
     /* scroll-target-group names the item in view: it counts down, then hands off.
        Any change of item starts the next item's countdown from zero. */
-    /* The item behind the current one runs the same countdown and drops its
-       alignment at the same instant. Re-snapping prefers the earlier target
-       whatever the distance, so the nearest one behind has to be two steps
-       away for the carousel to move forward instead of backward. */
-    figure::scroll-marker {
-      transition: opacity 0.2s ease;
-    }
-
+    /* One countdown, one timing function. The current item and everything
+       behind it run the same animation, started by the same selector change,
+       and drop their alignment together -- so the only snap positions left
+       are ahead and the carousel can only move forward. */
     figure:has(:target-current),
-    figure:has(+ figure :target-current) {
+    figure:has(~ figure :target-current) {
       animation: --advance 10s steps(1, jump-end) forwards;
     }
 
-    /* The ring is the same countdown: same element, same start, same
-       duration, same resets. Anything on its own clock drifts. */
+    /* The ring is that same countdown, second entry in the same list */
     figure:has(:target-current) {
       animation: --advance 10s steps(1, jump-end) forwards,
         --fill-ring 10s linear forwards;
@@ -290,13 +247,15 @@
       mask: radial-gradient(closest-side, transparent calc(100% - 0.3rem), black 0);
     }
 
-    section:has(figure:last-child :target-current) {
-      animation: --rewind 10s steps(1, jump-end) forwards;
+    /* On the last item the first one keeps its alignment, so when the rest
+       let go it is the only target left and the carousel wraps to the start */
+    figure:first-child:has(~ figure:last-child :target-current) {
+      animation-name: none;
     }
 
     /* Interaction that does not change the item still resets the countdown:
-       focus and press each swap in an identical animation under a new name. */
-    section:focus-within figure:has(+ figure :target-current) {
+       focus and press each swap in identical animations under new names. */
+    section:focus-within figure:has(~ figure :target-current) {
       animation-name: --advance-b;
     }
 
@@ -304,27 +263,12 @@
       animation-name: --advance-b, --fill-ring-b;
     }
 
-    section:focus-within:has(figure:last-child :target-current) {
-      animation-name: --rewind-b;
-    }
-
-      section:active figure:has(+ figure :target-current) {
+    section:active figure:has(~ figure :target-current) {
       animation-name: --advance-c;
     }
 
     section:active figure:has(:target-current) {
       animation-name: --advance-c, --fill-ring-c;
-    }
-
-    section:active:has(figure:last-child :target-current) {
-      animation-name: --rewind-c;
-    }
-
-    /* Only the first item keeps a snap position, so the carousel wraps to it */
-    @container style(--rewind-now: yes) {
-      figure:not(:first-child) {
-        scroll-snap-align: none;
-      }
     }
 
     /* Engines without scroll-target-group cannot parse the selectors above,
@@ -474,6 +418,9 @@
   section::scroll-button(right) {
     content: "\203A" / "Next";
     right: calc(anchor(right) + 0.75rem);
+    background:
+      radial-gradient(closest-side, Canvas calc(100% - 0.3rem), transparent 0),
+      conic-gradient(var(--accent) var(--ring), var(--track) 0);
     animation: --fill-ring linear both;
     animation-timeline: --progress;
   }

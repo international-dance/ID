@@ -231,6 +231,7 @@
     scrollbar-width: none;
     anchor-name: --carousel;
     scroll-target-group: auto;
+    scroll-marker-group: after;
     scroll-timeline: --progress inline;
     counter-reset: day;
   }
@@ -363,6 +364,43 @@
   figure:has(:target-current) img {
     outline: 0.1875rem solid var(--accent);
     outline-offset: 0.25rem;
+  }
+
+  /* Native marker dots. The browser gives the group tablist semantics, each
+     marker a tab role, and arrow-key paging between slides, for free. */
+  section::scroll-marker-group {
+    position: absolute;
+    position-anchor: --carousel;
+    top: calc(anchor(bottom) + 0.75rem);
+    justify-self: anchor-center;
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  /* Markers behave like anchors, so the UA gives them link blue; currentColor
+     has to be pulled back to the page's text colour before the mixes work. */
+  figure::scroll-marker {
+    content: "" / attr(data-label);
+    color: inherit;
+    inline-size: 0.7rem;
+    aspect-ratio: 1;
+    border: 0.125rem solid var(--muted);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  figure::scroll-marker:hover {
+    border-color: currentColor;
+  }
+
+  figure::scroll-marker:target-current {
+    border-color: var(--accent);
+    background: var(--accent);
+  }
+
+  figure::scroll-marker:focus-visible {
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.1875rem;
   }
 
   /* Native previous / next controls, positioned against the carousel anchor */

@@ -153,7 +153,11 @@
     justify-items: center;
   }
 
+  /* The permalink group lives on the wrapper, not on the scroller: the
+     scroller already runs scroll-marker-group, and stacking two marker
+     mechanisms on one element is asking for them to interfere. */
   article {
+    scroll-target-group: auto;
     display: grid;
     gap: 2rem;
     inline-size: min(100%, 64rem);
@@ -230,7 +234,6 @@
     scroll-padding-inline: var(--pad);
     scrollbar-width: none;
     anchor-name: --carousel;
-    scroll-target-group: auto;
     scroll-marker-group: after;
     scroll-timeline: --progress inline;
     counter-reset: day;
@@ -258,6 +261,10 @@
        alignment at the same instant. Re-snapping prefers the earlier target
        whatever the distance, so the nearest one behind has to be two steps
        away for the carousel to move forward instead of backward. */
+    figure::scroll-marker {
+      transition: opacity 0.2s ease;
+    }
+
     figure:has(:target-current),
     figure:has(+ figure :target-current) {
       animation: --advance 10s steps(1, jump-end) forwards;
@@ -371,34 +378,38 @@
   section::scroll-marker-group {
     position: absolute;
     position-anchor: --carousel;
-    top: calc(anchor(bottom) + 0.75rem);
-    justify-self: anchor-center;
+    position-area: bottom;
+    margin-block-start: 0.9rem;
     display: flex;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
   /* Markers behave like anchors, so the UA gives them link blue; currentColor
-     has to be pulled back to the page's text colour before the mixes work. */
+     has to be pulled back to the page's text colour before it is used.
+     counter() resolves to 0 in here -- the group sits elsewhere in the box
+     tree -- and an empty alt string drops the marker out of the a11y tree,
+     so the accessible name comes from the item's own label. */
   figure::scroll-marker {
     content: "" / attr(data-label);
     color: inherit;
     inline-size: 0.7rem;
     aspect-ratio: 1;
-    border: 0.125rem solid var(--muted);
     border-radius: 50%;
+    background: currentColor;
+    opacity: 0.5;
     cursor: pointer;
   }
 
-  figure::scroll-marker:hover {
-    border-color: currentColor;
+  figure::scroll-marker:target-current {
+    opacity: 1;
   }
 
-  figure::scroll-marker:target-current {
-    border-color: var(--accent);
-    background: var(--accent);
+  figure::scroll-marker:hover {
+    opacity: 0.8;
   }
 
   figure::scroll-marker:focus-visible {
+    opacity: 1;
     outline: 0.1875rem solid var(--accent);
     outline-offset: 0.1875rem;
   }

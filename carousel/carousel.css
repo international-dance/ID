@@ -199,11 +199,19 @@
     scroll-margin-inline-start: 8px;
   }
 
+  /* Engines without scroll-target-group cannot parse the selector below,
+     so the same fallback is stated once for each way it can be reached. */
   @supports not (scroll-target-group: auto) {
     figure {
       animation: --advance-wave calc(1s + 5s * (sibling-count() - sibling-index()))
         steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
     }
+  }
+
+  /* Markup with no scroll markers in it: nothing can report itself current */
+  section:where(:not(:has(:target-current))) figure {
+    animation: --advance-wave calc(1s + 5s * (sibling-count() - sibling-index()))
+      steps(1, jump-end) calc(5s + 5s * sibling-index()) 1;
   }
 
   @container style(--phase: wait) {
@@ -336,6 +344,10 @@
     }
 
     section {
+      animation-name: none;
+    }
+
+    section figure {
       animation-name: none;
     }
 

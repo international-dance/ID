@@ -1,4 +1,4 @@
-@layer figure, carousel;
+@layer figure, carousel, state;
 
 @property --ring {
   syntax: "<percentage>";
@@ -111,13 +111,42 @@
   figure img {
     inline-size: 100%;
     aspect-ratio: 4 / 5;
+    /* portrait ratio until it would outgrow the viewport, then cover crops */
+    max-block-size: min(55vh, 26rem);
     border-radius: 0.75rem;
     object-fit: cover;
   }
 
   figcaption {
+    display: grid;
+    gap: 0.25rem;
+    justify-items: start;
+  }
+
+  /* name */
+  figcaption > a:first-child {
     font-size: 1.05rem;
     font-weight: 600;
+  }
+
+  /* title */
+  figcaption small {
+    color: var(--muted);
+  }
+
+  /* one-line summary, clipped rather than pushing the card taller */
+  figcaption p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* bio link, out to the about section */
+  figcaption > a:last-child {
+    color: var(--accent);
+    text-decoration: underline;
   }
 
   /* Each caption links to its own item. That anchor is what scroll-target-group
@@ -149,9 +178,26 @@
    it reaches figures used anywhere else.
    =========================================================================== */
 @layer carousel {
-  /* The permalink group sits on the wrapper, not the scroller */
+  /* The checkboxes set state once, as custom properties. Everything that
+     reacts to that state does so with a style query, so the same pattern
+     serves the filterable gallery without repeating the :has() plumbing. */
   article {
+    --autoplay: on;
+    --dots: on;
+
+    /* a size container, so the carousel sizes off its container rather than
+       the viewport. Safe here: the containing block it creates for the dots
+       and the ring sits outside the scroller, so neither gets clipped. */
+    container-type: inline-size;
     scroll-target-group: auto;
+  }
+
+  article:has(input[name="autoplay"]:not(:checked)) {
+    --autoplay: off;
+  }
+
+  article:has(input[name="dots"]:not(:checked)) {
+    --dots: off;
   }
 
   header nav ul {
@@ -231,7 +277,7 @@
      it is also what marks this section as the carousel rather than any other
      group of figures on the page. */
   section[tabindex] {
-    --item: min(82vw, 34rem);
+    --item: min(82cqi, 34rem);
 
     display: grid;
     grid-auto-flow: column;
@@ -285,10 +331,6 @@
 
   section[tabindex] > figure:has(:target-current)::after {
     opacity: 1;
-  }
-
-  article:has(input[name="dots"]:not(:checked)) section[tabindex] > figure::after {
-    display: none;
   }
 
   /* Native previous / next controls, anchored to the carousel */
@@ -400,14 +442,14 @@
     }
 
     /* Switching the toggle off drops every countdown and hides the ring */
-    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(:target-current),
-    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(+ figure :target-current),
-    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(~ figure:last-child :target-current) {
-      animation-name: none;
-    }
+    @container style(--autoplay: off) {
+      section[tabindex] > figure {
+        animation-name: none;
+      }
 
-    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(:target-current)::before {
-      display: none;
+      section[tabindex] > figure:has(:target-current)::before {
+        display: none;
+      }
     }
   }
 
@@ -415,6 +457,28 @@
     :root,
     section[tabindex] {
       scroll-behavior: auto;
+    }
+  }
+}
+
+/* ===========================================================================
+   STATE — the toggles, read as style queries. A later layer, so these win
+   over the rules they switch off without matching their specificity.
+   =========================================================================== */
+@layer state {
+  @container style(--autoplay: off) {
+    section[tabindex] > figure {
+      animation-name: none;
+    }
+
+    section[tabindex] > figure::before {
+      display: none;
+    }
+  }
+
+  @container style(--dots: off) {
+    section[tabindex] > figure::after {
+      display: none;
     }
   }
 }

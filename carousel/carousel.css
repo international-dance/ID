@@ -11,51 +11,39 @@
    animation-name is what restarts an animation, so each interaction state
    needs a name of its own. */
 @keyframes --tick {
-  from {
-    --ring: 0%;
-    scroll-snap-align: start;
-  }
-
-  99% {
-    scroll-snap-align: start;
-  }
-
-  to {
-    --ring: 100%;
-    scroll-snap-align: none;
-  }
+  from { --ring: 0%; scroll-snap-align: start; }
+  99% { scroll-snap-align: start; }
+  to { --ring: 100%; scroll-snap-align: none; }
 }
 
 @keyframes --tick-b {
-  from {
-    --ring: 0%;
-    scroll-snap-align: start;
-  }
-
-  99% {
-    scroll-snap-align: start;
-  }
-
-  to {
-    --ring: 100%;
-    scroll-snap-align: none;
-  }
+  from { --ring: 0%; scroll-snap-align: start; }
+  99% { scroll-snap-align: start; }
+  to { --ring: 100%; scroll-snap-align: none; }
 }
 
 @keyframes --tick-c {
-  from {
-    --ring: 0%;
-    scroll-snap-align: start;
-  }
+  from { --ring: 0%; scroll-snap-align: start; }
+  99% { scroll-snap-align: start; }
+  to { --ring: 100%; scroll-snap-align: none; }
+}
 
-  99% {
-    scroll-snap-align: start;
-  }
+@keyframes --tick-p {
+  from { --ring: 0%; scroll-snap-align: start; }
+  99% { scroll-snap-align: start; }
+  to { --ring: 100%; scroll-snap-align: none; }
+}
 
-  to {
-    --ring: 100%;
-    scroll-snap-align: none;
-  }
+@keyframes --tick-pb {
+  from { --ring: 0%; scroll-snap-align: start; }
+  99% { scroll-snap-align: start; }
+  to { --ring: 100%; scroll-snap-align: none; }
+}
+
+@keyframes --tick-pc {
+  from { --ring: 0%; scroll-snap-align: start; }
+  99% { scroll-snap-align: start; }
+  to { --ring: 100%; scroll-snap-align: none; }
 }
 
 /* The right-hand ring is the same property on a scroll timeline, not a clock */
@@ -219,30 +207,39 @@
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    /* The item in view and everything behind it run one animation, started by
-       the same selector change, and let go of their alignment together -- so
-       the only snap positions left are ahead and the scroller re-snaps
-       forward. Re-snapping prefers the earlier target at any distance. */
-    figure:has(:target-current),
-    figure:has(~ figure :target-current) {
+    /* The item in view runs the countdown. The one behind it runs the same
+       clock under its own name, so a figure crossing between the two roles
+       gets a fresh animation instead of inheriting a part-spent one. Both let
+       go of their alignment together: backward is then two steps and forward
+       one, and re-snapping prefers the earlier target at any distance. */
+    figure:has(:target-current) {
       animation: --tick 10s linear forwards;
     }
 
-    /* On the last item the first one is held back, so when the rest let go it
-       is the only target left and the carousel wraps to the start. */
-    figure:first-child:has(~ figure:last-child :target-current) {
-      animation-name: none;
+    /* On the last item every earlier one lets go except the first, leaving it
+       the only target left, and the carousel wraps to the start. */
+    figure:has(+ figure :target-current),
+    figure:has(~ figure:last-child :target-current):not(:first-child) {
+      animation: --tick-p 10s linear forwards;
     }
 
     /* Interaction that does not change the item still resets the countdown */
-    section:focus-within figure:has(:target-current),
-    section:focus-within figure:has(~ figure :target-current) {
+    section:focus-within figure:has(:target-current) {
       animation-name: --tick-b;
     }
 
-    section:active figure:has(:target-current),
-    section:active figure:has(~ figure :target-current) {
+    section:focus-within figure:has(+ figure :target-current),
+    section:focus-within figure:has(~ figure:last-child :target-current):not(:first-child) {
+      animation-name: --tick-pb;
+    }
+
+    section:active figure:has(:target-current) {
       animation-name: --tick-c;
+    }
+
+    section:active figure:has(+ figure :target-current),
+    section:active figure:has(~ figure:last-child :target-current):not(:first-child) {
+      animation-name: --tick-pc;
     }
 
     /* The ring is that same countdown, painted over the left button */
@@ -257,6 +254,11 @@
       border-radius: 50%;
       background: conic-gradient(var(--accent) var(--ring), var(--track) 0);
       mask: radial-gradient(closest-side, transparent calc(100% - 0.3rem), black 0);
+    }
+
+    /* At the start the Previous button is disabled; the ring matches it */
+    figure:first-child:has(:target-current)::before {
+      opacity: 0.4;
     }
 
     figure::scroll-marker {

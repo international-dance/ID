@@ -270,10 +270,12 @@
      the reader activates and never tracks again. scroll-target-group on real
      anchors keeps tracking, so the dots are links to the slides. */
   article > nav ul {
+    position: absolute;
+    position-anchor: --carousel;
+    position-area: bottom;
+    margin-block-start: 0.9rem;
     display: flex;
-    justify-content: center;
     gap: 0.5rem;
-    margin: 0.9rem 0 0;
     padding: 0;
     list-style: none;
     scroll-target-group: auto;

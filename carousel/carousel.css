@@ -6,6 +6,18 @@
   initial-value: 0%;
 }
 
+/* Parallax: the photo pans inside its frame, the corner drifts the other way,
+   both driven by the item's own progress across the scrollport. */
+@keyframes --pan-photo {
+  from { object-position: 50% 12%; }
+  to { object-position: 50% 88%; }
+}
+
+@keyframes --drift-corner {
+  from { translate: 5% -4%; }
+  to { translate: -4% 3%; }
+}
+
 /* Reads scroll position, not a clock: the Next button's ring is how far
    through the carousel the reader has scrolled. */
 @keyframes --fill-ring {
@@ -48,6 +60,7 @@
      the width it was given -- in a carousel, a gallery or anywhere else. */
   figure {
     container-type: inline-size;
+    overflow: clip;
     display: grid;
     grid-auto-columns: 1fr;
     align-items: start;
@@ -67,13 +80,26 @@
     }
   }
 
+  /* Every portrait is the same size and the same portrait ratio, whatever the
+     source file is: the frame sets the shape, cover fills it. */
   figure img {
+    grid-area: 1 / 1;
     inline-size: 100%;
     aspect-ratio: 4 / 5;
-    /* portrait ratio until it would outgrow the viewport, then cover crops */
-    max-block-size: min(55vh, 26rem);
     border-radius: 0.75rem;
     object-fit: cover;
+  }
+
+  /* Corner ornament, over the portrait. Masked rather than drawn, so it takes
+     the theme colour instead of being a black SVG on a dark photo. */
+  figure::after {
+    content: "";
+    grid-area: 1 / 1;
+    /* the figure aligns items to start, so an empty box would collapse */
+    place-self: stretch;
+    background: var(--accent);
+    mask: url("/assets/images/app/corner.svg") no-repeat top right / 42% auto;
+    pointer-events: none;
   }
 
   figcaption {
@@ -172,7 +198,7 @@
      it is also what marks this section as the carousel rather than any other
      group of figures on the page. */
   section[tabindex] {
-    --item: min(82vw, 34rem);
+    --item: min(78vw, 22rem);
 
     display: grid;
     grid-auto-flow: column;
@@ -196,6 +222,20 @@
   section[tabindex]:focus-visible {
     outline: 0.1875rem solid var(--accent);
     outline-offset: -0.1875rem;
+  }
+
+  /* Parallax is scroll-driven, so it lives with the scroller: the shared item
+     stays still anywhere there is nothing to scroll. */
+  @media (prefers-reduced-motion: no-preference) {
+    section[tabindex] > figure > img {
+      animation: --pan-photo linear both;
+      animation-timeline: view(inline);
+    }
+
+    section[tabindex] > figure::after {
+      animation: --drift-corner linear both;
+      animation-timeline: view(inline);
+    }
   }
 
   section[tabindex] > figure {

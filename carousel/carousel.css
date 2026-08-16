@@ -6,58 +6,39 @@
   initial-value: 0%;
 }
 
-/* Resolved on the figure so its pseudo-elements inherit numbers, not functions */
-@property --i {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 0;
-}
-
-@property --n {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 1;
-}
-
 /* One countdown drives everything: the ring fills as it runs and the snap
    alignment drops at the very end. -b and -c are identical -- swapping
    animation-name is what restarts an animation, so each interaction state
    needs a name of its own, and -p keeps the item behind on its own name so
    crossing between the two roles always starts a fresh clock. */
 @keyframes --tick {
-  from { --ring: 0%; scroll-snap-align: start; }
-  99% { scroll-snap-align: start; }
-  to { --ring: 100%; scroll-snap-align: none; }
+  from { scroll-snap-align: start; }
+  to { scroll-snap-align: none; }
 }
 
 @keyframes --tick-b {
-  from { --ring: 0%; scroll-snap-align: start; }
-  99% { scroll-snap-align: start; }
-  to { --ring: 100%; scroll-snap-align: none; }
+  from { scroll-snap-align: start; }
+  to { scroll-snap-align: none; }
 }
 
 @keyframes --tick-c {
-  from { --ring: 0%; scroll-snap-align: start; }
-  99% { scroll-snap-align: start; }
-  to { --ring: 100%; scroll-snap-align: none; }
+  from { scroll-snap-align: start; }
+  to { scroll-snap-align: none; }
 }
 
 @keyframes --tick-p {
-  from { --ring: 0%; scroll-snap-align: start; }
-  99% { scroll-snap-align: start; }
-  to { --ring: 100%; scroll-snap-align: none; }
+  from { scroll-snap-align: start; }
+  to { scroll-snap-align: none; }
 }
 
 @keyframes --tick-pb {
-  from { --ring: 0%; scroll-snap-align: start; }
-  99% { scroll-snap-align: start; }
-  to { --ring: 100%; scroll-snap-align: none; }
+  from { scroll-snap-align: start; }
+  to { scroll-snap-align: none; }
 }
 
 @keyframes --tick-pc {
-  from { --ring: 0%; scroll-snap-align: start; }
-  99% { scroll-snap-align: start; }
-  to { --ring: 100%; scroll-snap-align: none; }
+  from { scroll-snap-align: start; }
+  to { scroll-snap-align: none; }
 }
 
 /* The right-hand ring reads scroll position, not a clock */
@@ -97,15 +78,27 @@
     font: 1rem/1.5 system-ui, sans-serif;
   }
 
-  /* Two columns when the item is wide enough for them, one when it is not:
-     the caption sits inline-end of the portrait, or under it. No breakpoint,
-     no container query -- the track count follows the width it is given. */
+  /* The item is its own size container, so anything inside it can respond to
+     the width it was given -- in a carousel, a gallery or anywhere else. */
   figure {
+    container-type: inline-size;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    grid-auto-columns: 1fr;
     align-items: start;
     gap: 0.75rem;
     margin: 0;
+  }
+
+  /* Wide enough for both: caption to the inline-end of the portrait.
+     Otherwise auto-placement stacks them. */
+  @container (inline-size > 34rem) {
+    figure > img {
+      grid-area: 1 / 1;
+    }
+
+    figure > figcaption {
+      grid-area: 1 / 2;
+    }
   }
 
   figure img {
@@ -183,17 +176,12 @@
      serves the filterable gallery without repeating the :has() plumbing. */
   article {
     --autoplay: on;
-    --dots: on;
 
     scroll-target-group: auto;
   }
 
   article:has(input[name="autoplay"]:not(:checked)) {
     --autoplay: off;
-  }
-
-  article:has(input[name="dots"]:not(:checked)) {
-    --dots: off;
   }
 
   header nav ul {
@@ -300,33 +288,10 @@
   }
 
   section[tabindex] > figure {
-    --i: sibling-index();
-    --n: sibling-count();
-
     scroll-snap-align: start;
     scroll-snap-stop: always;
     /* so a fragment link lands on the item's snap position, not just in view */
     scroll-margin-inline-end: max(0rem, calc(100vw - var(--item) - 2 * var(--pad)));
-  }
-
-  /* Dots. One per item, derived from the item: the row centres itself on the
-     carousel and re-spaces when items are added or removed, with nothing to
-     maintain in the markup and no per-item rule here. */
-  section[tabindex] > figure::after {
-    content: "";
-    position: absolute;
-    position-anchor: --carousel;
-    top: calc(anchor(bottom) + 0.9rem);
-    left: calc(anchor(center) + (var(--i) - (var(--n) + 1) / 2) * 1.2rem);
-    inline-size: 0.7rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: currentColor;
-    opacity: 0.5;
-  }
-
-  section[tabindex] > figure:has(:target-current)::after {
-    opacity: 1;
   }
 
   /* Native previous / next controls, anchored to the carousel */
@@ -360,11 +325,9 @@
     translate: 0 0.0625rem;
   }
 
-  /* Left: the countdown ring is painted behind it by the item in view */
   section[tabindex]::scroll-button(left) {
     content: "\2039" / "Previous";
     left: calc(anchor(left) + 0.75rem);
-    z-index: 1;
   }
 
   /* Right: how far through the carousel the reader has scrolled */
@@ -384,14 +347,14 @@
        backward is two steps and forward one, and re-snapping prefers the
        earlier target at any distance. */
     section[tabindex] > figure:has(:target-current) {
-      animation: --tick 10s linear forwards;
+      animation: --tick 10s steps(1, jump-end) forwards;
     }
 
     /* On the last item every earlier one lets go except the first, leaving it
        the only target left, and the carousel wraps to the start. */
     section[tabindex] > figure:has(+ figure :target-current),
     section[tabindex] > figure:has(~ figure:last-child :target-current):not(:first-child) {
-      animation: --tick-p 10s linear forwards;
+      animation: --tick-p 10s steps(1, jump-end) forwards;
     }
 
     /* Interaction that does not change the item still resets the countdown */
@@ -413,40 +376,10 @@
       animation-name: --tick-pc;
     }
 
-    /* The ring is that same countdown, painted over the left button */
-    section[tabindex] > figure:has(:target-current)::before {
-      content: "";
-      position: absolute;
-      position-anchor: --carousel;
-      left: calc(anchor(left) + 0.75rem);
-      align-self: anchor-center;
-      inline-size: 3rem;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: conic-gradient(var(--accent) var(--ring), var(--track) 0);
-      mask: radial-gradient(closest-side, transparent calc(100% - 0.3rem), black 0);
-    }
-
-    /* At the start the Previous button is disabled; the ring matches it */
-    section[tabindex] > figure:first-child:has(:target-current)::before {
-      opacity: 0.4;
-    }
-
-    section[tabindex] > figure::after,
     header input::before {
-      transition: opacity 0.2s ease, translate 0.2s ease;
+      transition: translate 0.2s ease;
     }
 
-    /* Switching the toggle off drops every countdown and hides the ring */
-    @container style(--autoplay: off) {
-      section[tabindex] > figure {
-        animation-name: none;
-      }
-
-      section[tabindex] > figure:has(:target-current)::before {
-        display: none;
-      }
-    }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -465,16 +398,6 @@
   @container style(--autoplay: off) {
     section[tabindex] > figure {
       animation-name: none;
-    }
-
-    section[tabindex] > figure::before {
-      display: none;
-    }
-  }
-
-  @container style(--dots: off) {
-    section[tabindex] > figure::after {
-      display: none;
     }
   }
 }

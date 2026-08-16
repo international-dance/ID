@@ -102,7 +102,7 @@
      no container query -- the track count follows the width it is given. */
   figure {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
     align-items: start;
     gap: 0.75rem;
     margin: 0;
@@ -193,6 +193,7 @@
     align-items: center;
     gap: 0.5rem;
     margin-block: 1rem 2rem;
+    margin-inline-end: 1.5rem;
     cursor: pointer;
   }
 
@@ -284,6 +285,10 @@
 
   section[tabindex] > figure:has(:target-current)::after {
     opacity: 1;
+  }
+
+  article:has(input[name="dots"]:not(:checked)) section[tabindex] > figure::after {
+    display: none;
   }
 
   /* Native previous / next controls, anchored to the carousel */

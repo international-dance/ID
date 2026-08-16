@@ -1,4 +1,4 @@
-@layer carousel;
+@layer figure, carousel;
 
 @property --ring {
   syntax: "<percentage>";
@@ -6,10 +6,24 @@
   initial-value: 0%;
 }
 
+/* Resolved on the figure so its pseudo-elements inherit numbers, not functions */
+@property --i {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --n {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+}
+
 /* One countdown drives everything: the ring fills as it runs and the snap
    alignment drops at the very end. -b and -c are identical -- swapping
    animation-name is what restarts an animation, so each interaction state
-   needs a name of its own. */
+   needs a name of its own, and -p keeps the item behind on its own name so
+   crossing between the two roles always starts a fresh clock. */
 @keyframes --tick {
   from { --ring: 0%; scroll-snap-align: start; }
   99% { scroll-snap-align: start; }
@@ -46,18 +60,17 @@
   to { --ring: 100%; scroll-snap-align: none; }
 }
 
-/* The right-hand ring is the same property on a scroll timeline, not a clock */
+/* The right-hand ring reads scroll position, not a clock */
 @keyframes --fill-ring {
-  from {
-    --ring: 0%;
-  }
-
-  to {
-    --ring: 100%;
-  }
+  from { --ring: 0%; }
+  to { --ring: 100%; }
 }
 
-@layer carousel {
+/* ===========================================================================
+   FIGURE — the shared item. Nothing here knows about the carousel, so the
+   same markup drops into a gallery unchanged.
+   =========================================================================== */
+@layer figure {
   *,
   *::before,
   *::after {
@@ -65,7 +78,6 @@
   }
 
   :root {
-    --item: min(82vw, 34rem);
     --gap: 1.5rem;
     --pad: 1.5rem;
     --accent: light-dark(oklch(0.44 0.15 340), oklch(0.84 0.11 340));
@@ -85,17 +97,67 @@
     font: 1rem/1.5 system-ui, sans-serif;
   }
 
-  /* The permalink group lives on the wrapper: the scroller runs
-     scroll-marker-group, and two marker mechanisms on one element interfere. */
+  /* Two columns when the item is wide enough for them, one when it is not:
+     the caption sits inline-end of the portrait, or under it. No breakpoint,
+     no container query -- the track count follows the width it is given. */
+  figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    align-items: start;
+    gap: 0.75rem;
+    margin: 0;
+  }
+
+  figure img {
+    inline-size: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 0.75rem;
+    object-fit: cover;
+  }
+
+  figcaption {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  /* Each caption links to its own item. That anchor is what scroll-target-group
+     turns into a scroll target, and the only way a rule can select the item in
+     view: :has() cannot see a ::scroll-marker. */
+  figcaption a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  figcaption a:hover {
+    text-decoration: underline;
+  }
+
+  figcaption a:focus-visible {
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.1875rem;
+  }
+
+  /* Only ever matches inside a scroll-target-group, so it is inert elsewhere */
+  figure:has(:target-current) img {
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.25rem;
+  }
+}
+
+/* ===========================================================================
+   CAROUSEL — everything below is scoped to the scroll container, so none of
+   it reaches figures used anywhere else.
+   =========================================================================== */
+@layer carousel {
+  /* The permalink group sits on the wrapper, not the scroller */
   article {
     scroll-target-group: auto;
   }
 
-  /* Section navigation: standard anchor links, tracked by the browser */
   header nav ul {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 0;
     padding: 0;
     list-style: none;
     scroll-target-group: auto;
@@ -120,17 +182,17 @@
     color: Canvas;
   }
 
-  header nav a:focus-visible {
+  header nav a:focus-visible,
+  header input:focus-visible {
     outline: 0.1875rem solid var(--accent);
     outline-offset: 0.1875rem;
   }
 
-  /* Auto-advance toggle */
   header label {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-block-end: 2rem;
+    margin-block: 1rem 2rem;
     cursor: pointer;
   }
 
@@ -164,13 +226,12 @@
     translate: 1rem 0;
   }
 
-  header input:focus-visible {
-    outline: 0.1875rem solid var(--accent);
-    outline-offset: 0.1875rem;
-  }
+  /* The scroll container. tabindex is what makes it keyboard-scrollable, and
+     it is also what marks this section as the carousel rather than any other
+     group of figures on the page. */
+  section[tabindex] {
+    --item: min(82vw, 34rem);
 
-  /* The carousel: a native scroll container, full-bleed out of the body padding */
-  section {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: var(--item);
@@ -188,160 +249,32 @@
     scrollbar-width: none;
     anchor-name: --carousel;
     scroll-timeline: --progress inline;
-    counter-reset: day;
   }
 
-  section:focus-visible {
+  section[tabindex]:focus-visible {
     outline: 0.1875rem solid var(--accent);
     outline-offset: -0.1875rem;
   }
 
-  figure {
-    display: grid;
-    gap: 0.75rem;
-    margin: 0;
-    counter-increment: day;
+  section[tabindex] > figure {
+    --i: sibling-index();
+    --n: sibling-count();
+
     scroll-snap-align: start;
     scroll-snap-stop: always;
     /* so a fragment link lands on the item's snap position, not just in view */
     scroll-margin-inline-end: max(0rem, calc(100vw - var(--item) - 2 * var(--pad)));
   }
 
-  figure:nth-last-child(-n + 2) {
-    counter-increment: none;
-  }
-
-  img {
-    inline-size: 100%;
-    block-size: clamp(13rem, 40vh, 24rem);
-    border-radius: 0.75rem;
-    object-fit: cover;
-  }
-
-  figure:has(:target-current) img {
-    outline: 0.1875rem solid var(--accent);
-    outline-offset: 0.25rem;
-  }
-
-  figcaption::before {
-    content: "Day " counter(day) " · ";
-    color: var(--muted);
-  }
-
-  figure:nth-last-child(-n + 2) figcaption::before {
-    content: none;
-  }
-
-  /* Each caption links to its own item. scroll-target-group turns those into
-     scroll targets, which is the only way a rule can select the item in view:
-     :has() cannot see a ::scroll-marker. The countdown hangs off this. */
-  figcaption a {
-    color: inherit;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  figcaption a:hover {
-    text-decoration: underline;
-  }
-
-  figcaption a:focus-visible {
-    outline: 0.1875rem solid var(--accent);
-    outline-offset: 0.1875rem;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    /* The item in view runs the countdown. The one behind it runs the same
-       clock under its own name, so a figure crossing between the two roles
-       gets a fresh animation instead of inheriting a part-spent one. Both let
-       go of their alignment together: backward is then two steps and forward
-       one, and re-snapping prefers the earlier target at any distance. */
-    figure:has(:target-current) {
-      animation: --tick 10s linear forwards;
-    }
-
-    /* On the last item every earlier one lets go except the first, leaving it
-       the only target left, and the carousel wraps to the start. */
-    figure:has(+ figure :target-current),
-    figure:has(~ figure:last-child :target-current):not(:first-child) {
-      animation: --tick-p 10s linear forwards;
-    }
-
-    /* Interaction that does not change the item still resets the countdown */
-    section:focus-within figure:has(:target-current) {
-      animation-name: --tick-b;
-    }
-
-    section:focus-within figure:has(+ figure :target-current),
-    section:focus-within figure:has(~ figure:last-child :target-current):not(:first-child) {
-      animation-name: --tick-pb;
-    }
-
-    section:active figure:has(:target-current) {
-      animation-name: --tick-c;
-    }
-
-    section:active figure:has(+ figure :target-current),
-    section:active figure:has(~ figure:last-child :target-current):not(:first-child) {
-      animation-name: --tick-pc;
-    }
-
-    /* The ring is that same countdown, painted over the left button */
-    figure:has(:target-current)::before {
-      content: "";
-      position: absolute;
-      position-anchor: --carousel;
-      left: calc(anchor(left) + 0.75rem);
-      align-self: anchor-center;
-      inline-size: 3rem;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: conic-gradient(var(--accent) var(--ring), var(--track) 0);
-      mask: radial-gradient(closest-side, transparent calc(100% - 0.3rem), black 0);
-    }
-
-    /* At the start the Previous button is disabled; the ring matches it */
-    figure:first-child:has(:target-current)::before {
-      opacity: 0.4;
-    }
-
-    article > nav a,
-    header input::before {
-      transition: opacity 0.2s ease, translate 0.2s ease;
-    }
-
-    /* Switching the toggle off drops every countdown and hides the ring */
-    article:has(input[name="autoplay"]:not(:checked)) figure:has(:target-current),
-    article:has(input[name="autoplay"]:not(:checked)) figure:has(+ figure :target-current),
-    article:has(input[name="autoplay"]:not(:checked)) figure:has(~ figure:last-child :target-current) {
-      animation-name: none;
-    }
-
-    article:has(input[name="autoplay"]:not(:checked)) figure:has(:target-current)::before {
-      display: none;
-    }
-  }
-
-  /* Dots. ::scroll-marker would give these tablist semantics and arrow-key
-     paging for free, but its :target-current freezes on the first fragment
-     the reader activates and never tracks again. scroll-target-group on real
-     anchors keeps tracking, so the dots are links to the slides. */
-  article > nav ul {
+  /* Dots. One per item, derived from the item: the row centres itself on the
+     carousel and re-spaces when items are added or removed, with nothing to
+     maintain in the markup and no per-item rule here. */
+  section[tabindex] > figure::after {
+    content: "";
     position: absolute;
     position-anchor: --carousel;
-    position-area: bottom;
-    margin-block-start: 0.9rem;
-    display: flex;
-    gap: 0.5rem;
-    padding: 0;
-    list-style: none;
-    scroll-target-group: auto;
-  }
-
-  /* links inherit UA blue, so currentColor has to be pulled back first */
-  article > nav a {
-    display: block;
-    color: inherit;
+    top: calc(anchor(bottom) + 0.9rem);
+    left: calc(anchor(center) + (var(--i) - (var(--n) + 1) / 2) * 1.2rem);
     inline-size: 0.7rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -349,22 +282,12 @@
     opacity: 0.5;
   }
 
-  article > nav a:target-current {
+  section[tabindex] > figure:has(:target-current)::after {
     opacity: 1;
-  }
-
-  article > nav a:hover {
-    opacity: 0.8;
-  }
-
-  article > nav a:focus-visible {
-    opacity: 1;
-    outline: 0.1875rem solid var(--accent);
-    outline-offset: 0.1875rem;
   }
 
   /* Native previous / next controls, anchored to the carousel */
-  section::scroll-button(*) {
+  section[tabindex]::scroll-button(*) {
     position: absolute;
     position-anchor: --carousel;
     align-self: anchor-center;
@@ -379,30 +302,30 @@
     background: radial-gradient(closest-side, Canvas calc(100% - 0.3rem), transparent 0);
   }
 
-  section::scroll-button(*):disabled {
+  section[tabindex]::scroll-button(*):disabled {
     color: var(--muted);
     cursor: default;
     opacity: 0.4;
   }
 
-  section::scroll-button(*):focus-visible {
+  section[tabindex]::scroll-button(*):focus-visible {
     outline: 0.1875rem solid var(--accent);
     outline-offset: 0.1875rem;
   }
 
-  section::scroll-button(*):active {
+  section[tabindex]::scroll-button(*):active {
     translate: 0 0.0625rem;
   }
 
   /* Left: the countdown ring is painted behind it by the item in view */
-  section::scroll-button(left) {
+  section[tabindex]::scroll-button(left) {
     content: "\2039" / "Previous";
     left: calc(anchor(left) + 0.75rem);
     z-index: 1;
   }
 
   /* Right: how far through the carousel the reader has scrolled */
-  section::scroll-button(right) {
+  section[tabindex]::scroll-button(right) {
     content: "\203A" / "Next";
     right: calc(anchor(right) + 0.75rem);
     background:
@@ -412,9 +335,80 @@
     animation-timeline: --progress;
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    /* The item in view runs the countdown; the one behind it runs the same
+       clock under its own name. Both let go of their alignment together, so
+       backward is two steps and forward one, and re-snapping prefers the
+       earlier target at any distance. */
+    section[tabindex] > figure:has(:target-current) {
+      animation: --tick 10s linear forwards;
+    }
+
+    /* On the last item every earlier one lets go except the first, leaving it
+       the only target left, and the carousel wraps to the start. */
+    section[tabindex] > figure:has(+ figure :target-current),
+    section[tabindex] > figure:has(~ figure:last-child :target-current):not(:first-child) {
+      animation: --tick-p 10s linear forwards;
+    }
+
+    /* Interaction that does not change the item still resets the countdown */
+    section[tabindex]:focus-within > figure:has(:target-current) {
+      animation-name: --tick-b;
+    }
+
+    section[tabindex]:focus-within > figure:has(+ figure :target-current),
+    section[tabindex]:focus-within > figure:has(~ figure:last-child :target-current):not(:first-child) {
+      animation-name: --tick-pb;
+    }
+
+    section[tabindex]:active > figure:has(:target-current) {
+      animation-name: --tick-c;
+    }
+
+    section[tabindex]:active > figure:has(+ figure :target-current),
+    section[tabindex]:active > figure:has(~ figure:last-child :target-current):not(:first-child) {
+      animation-name: --tick-pc;
+    }
+
+    /* The ring is that same countdown, painted over the left button */
+    section[tabindex] > figure:has(:target-current)::before {
+      content: "";
+      position: absolute;
+      position-anchor: --carousel;
+      left: calc(anchor(left) + 0.75rem);
+      align-self: anchor-center;
+      inline-size: 3rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: conic-gradient(var(--accent) var(--ring), var(--track) 0);
+      mask: radial-gradient(closest-side, transparent calc(100% - 0.3rem), black 0);
+    }
+
+    /* At the start the Previous button is disabled; the ring matches it */
+    section[tabindex] > figure:first-child:has(:target-current)::before {
+      opacity: 0.4;
+    }
+
+    section[tabindex] > figure::after,
+    header input::before {
+      transition: opacity 0.2s ease, translate 0.2s ease;
+    }
+
+    /* Switching the toggle off drops every countdown and hides the ring */
+    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(:target-current),
+    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(+ figure :target-current),
+    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(~ figure:last-child :target-current) {
+      animation-name: none;
+    }
+
+    article:has(input[name="autoplay"]:not(:checked)) section[tabindex] > figure:has(:target-current)::before {
+      display: none;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     :root,
-    section {
+    section[tabindex] {
       scroll-behavior: auto;
     }
   }

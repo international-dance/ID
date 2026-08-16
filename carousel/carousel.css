@@ -13,9 +13,23 @@
   to { object-position: 50% 88%; }
 }
 
+@property --drift-x {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+@property --drift-y {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+/* The corner is anchored to the portrait, so parallax is just a moving
+   offset from the anchor rather than a transform on top of a layout. */
 @keyframes --drift-corner {
-  from { translate: 5% -4%; }
-  to { translate: -4% 3%; }
+  from { --drift-x: 0rem; --drift-y: 1.5rem; }
+  to { --drift-x: 1.5rem; --drift-y: 0rem; }
 }
 
 /* Reads scroll position, not a clock: the Next button's ring is how far
@@ -60,6 +74,8 @@
      the width it was given -- in a carousel, a gallery or anywhere else. */
   figure {
     container-type: inline-size;
+    /* containing block for the anchored corner, so its drift is clipped here */
+    position: relative;
     overflow: clip;
     display: grid;
     grid-auto-columns: 1fr;
@@ -84,21 +100,27 @@
      source file is: the frame sets the shape, cover fills it. */
   figure img {
     grid-area: 1 / 1;
+    anchor-name: --portrait;
     inline-size: 100%;
     aspect-ratio: 4 / 5;
     border-radius: 0.75rem;
     object-fit: cover;
   }
 
-  /* Corner ornament, over the portrait. Masked rather than drawn, so it takes
-     the theme colour instead of being a black SVG on a dark photo. */
+  /* Corner ornament, anchored to the portrait itself: it sits on the image's
+     top-right corner and scales with it, whatever the layout around it does.
+     Masked rather than drawn, so it takes the theme colour instead of being a
+     black SVG over a dark photo. */
   figure::after {
     content: "";
-    grid-area: 1 / 1;
-    /* the figure aligns items to start, so an empty box would collapse */
-    place-self: stretch;
+    position: absolute;
+    position-anchor: --portrait;
+    top: calc(anchor(top) + var(--drift-y));
+    right: calc(anchor(right) + var(--drift-x));
+    inline-size: calc(anchor-size(width) * 0.42);
+    aspect-ratio: 170 / 163;
     background: var(--accent);
-    mask: url("/assets/images/app/corner.svg") no-repeat top right / 42% auto;
+    mask: url("/assets/images/app/corner.svg") no-repeat center / contain;
     pointer-events: none;
   }
 

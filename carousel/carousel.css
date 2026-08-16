@@ -125,6 +125,50 @@
     outline-offset: 0.1875rem;
   }
 
+  /* Auto-advance toggle */
+  header label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block-end: 2rem;
+    cursor: pointer;
+  }
+
+  header input {
+    appearance: none;
+    display: grid;
+    align-items: center;
+    inline-size: 2.2rem;
+    block-size: 1.2rem;
+    padding: 0.1rem;
+    border: 0.0625rem solid var(--track);
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  header input::before {
+    content: "";
+    inline-size: 0.9rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+
+  header input:checked {
+    border-color: var(--accent);
+    background: var(--accent);
+  }
+
+  header input:checked::before {
+    background: Canvas;
+    translate: 1rem 0;
+  }
+
+  header input:focus-visible {
+    outline: 0.1875rem solid var(--accent);
+    outline-offset: 0.1875rem;
+  }
+
   /* The carousel: a native scroll container, full-bleed out of the body padding */
   section {
     display: grid;
@@ -134,6 +178,7 @@
     inline-size: 100vw;
     margin-inline: calc(50% - 50vw);
     padding-inline: var(--pad) max(var(--pad), calc(100vw - var(--item) - var(--pad)));
+    padding-block: 0.5rem;
     overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-inline: contain;
@@ -260,8 +305,20 @@
       opacity: 0.4;
     }
 
-    article > nav a {
-      transition: opacity 0.2s ease;
+    article > nav a,
+    header input::before {
+      transition: opacity 0.2s ease, translate 0.2s ease;
+    }
+
+    /* Switching the toggle off drops every countdown and hides the ring */
+    article:has(input[name="autoplay"]:not(:checked)) figure:has(:target-current),
+    article:has(input[name="autoplay"]:not(:checked)) figure:has(+ figure :target-current),
+    article:has(input[name="autoplay"]:not(:checked)) figure:has(~ figure:last-child :target-current) {
+      animation-name: none;
+    }
+
+    article:has(input[name="autoplay"]:not(:checked)) figure:has(:target-current)::before {
+      display: none;
     }
   }
 

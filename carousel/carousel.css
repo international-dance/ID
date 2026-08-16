@@ -185,10 +185,6 @@
     --autoplay: on;
     --dots: on;
 
-    /* a size container, so the carousel sizes off its container rather than
-       the viewport. Safe here: the containing block it creates for the dots
-       and the ring sits outside the scroller, so neither gets clipped. */
-    container-type: inline-size;
     scroll-target-group: auto;
   }
 
@@ -277,7 +273,7 @@
      it is also what marks this section as the carousel rather than any other
      group of figures on the page. */
   section[tabindex] {
-    --item: min(82cqi, 34rem);
+    --item: min(82vw, 34rem);
 
     display: grid;
     grid-auto-flow: column;

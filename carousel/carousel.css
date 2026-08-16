@@ -92,7 +92,7 @@
   }
 
   /* Section navigation: standard anchor links, tracked by the browser */
-  nav ul {
+  header nav ul {
     display: flex;
     gap: 1rem;
     margin: 1rem 0 2rem;
@@ -101,7 +101,7 @@
     scroll-target-group: auto;
   }
 
-  nav a {
+  header nav a {
     display: block;
     padding: 0.35rem 0.9rem;
     border: 0.0625rem solid var(--track);
@@ -110,17 +110,17 @@
     text-decoration: none;
   }
 
-  nav a:hover {
+  header nav a:hover {
     border-color: var(--accent);
   }
 
-  nav a:target-current {
+  header nav a:target-current {
     border-color: var(--accent);
     background: var(--accent);
     color: Canvas;
   }
 
-  nav a:focus-visible {
+  header nav a:focus-visible {
     outline: 0.1875rem solid var(--accent);
     outline-offset: 0.1875rem;
   }
@@ -142,7 +142,6 @@
     scroll-padding-inline: var(--pad);
     scrollbar-width: none;
     anchor-name: --carousel;
-    scroll-marker-group: after;
     scroll-timeline: --progress inline;
     counter-reset: day;
   }
@@ -261,45 +260,45 @@
       opacity: 0.4;
     }
 
-    figure::scroll-marker {
+    article > nav a {
       transition: opacity 0.2s ease;
     }
   }
 
-  /* Native dots. The browser gives the group tablist semantics, each marker a
-     tab role, and arrow-key paging. counter() reads 0 in here -- the group
-     sits elsewhere in the box tree -- and an empty alt string drops the marker
-     out of the accessibility tree, so the name comes from the item's label.
-     Markers behave like anchors, so colour is pulled back off UA link blue. */
-  section::scroll-marker-group {
-    position: absolute;
-    position-anchor: --carousel;
-    position-area: bottom;
-    margin-block-start: 0.9rem;
+  /* Dots. ::scroll-marker would give these tablist semantics and arrow-key
+     paging for free, but its :target-current freezes on the first fragment
+     the reader activates and never tracks again. scroll-target-group on real
+     anchors keeps tracking, so the dots are links to the slides. */
+  article > nav ul {
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
+    margin: 0.9rem 0 0;
+    padding: 0;
+    list-style: none;
+    scroll-target-group: auto;
   }
 
-  figure::scroll-marker {
-    content: "" / attr(data-label);
+  /* links inherit UA blue, so currentColor has to be pulled back first */
+  article > nav a {
+    display: block;
     color: inherit;
     inline-size: 0.7rem;
     aspect-ratio: 1;
     border-radius: 50%;
     background: currentColor;
     opacity: 0.5;
-    cursor: pointer;
   }
 
-  figure::scroll-marker:target-current {
+  article > nav a:target-current {
     opacity: 1;
   }
 
-  figure::scroll-marker:hover {
+  article > nav a:hover {
     opacity: 0.8;
   }
 
-  figure::scroll-marker:focus-visible {
+  article > nav a:focus-visible {
     opacity: 1;
     outline: 0.1875rem solid var(--accent);
     outline-offset: 0.1875rem;

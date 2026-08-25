@@ -9,8 +9,9 @@
 /* Parallax: the photo pans inside its frame, the corner drifts the other way,
    both driven by the item's own progress across the scrollport. */
 @keyframes --pan-photo {
-  from { object-position: 50% 12%; }
-  to { object-position: 50% 88%; }
+  from { object-position: 50% 18%; }
+  50% { object-position: 50% 50%; }
+  to { object-position: 50% 82%; }
 }
 
 @property --drift-x {
@@ -25,11 +26,15 @@
   initial-value: 0px;
 }
 
-/* The corner is anchored to the portrait, so parallax is just a moving
-   offset from the anchor rather than a transform on top of a layout. */
+/* The corner is anchored to the portrait, so parallax is just a moving offset
+   from the anchor rather than a transform on top of a layout. Both offsets are
+   inward — the ornament travels ACROSS the photo, in along the top edge and out
+   down the side — so it is never cut off by the frame or thrown over the
+   caption. It passes through the anchor itself at the item's resting position. */
 @keyframes --drift-corner {
-  from { --drift-x: 0rem; --drift-y: 1.5rem; }
-  to { --drift-x: 1.5rem; --drift-y: 0rem; }
+  from { --drift-x: 1.5rem; --drift-y: 0rem; }
+  50% { --drift-x: 0rem; --drift-y: 0rem; }
+  to { --drift-x: 0rem; --drift-y: 1.5rem; }
 }
 
 /* Reads scroll position, not a clock: the Next button's ring is how far
@@ -251,18 +256,34 @@
   @media (prefers-reduced-motion: no-preference) {
     section[tabindex] > figure > img {
       animation: --pan-photo linear both;
-      animation-timeline: view(inline);
     }
 
     section[tabindex] > figure::after {
       animation: --drift-corner linear both;
-      animation-timeline: view(inline);
+    }
+
+    /* After the shorthands, which reset both of these. A view timeline measures
+       against the scrollport shrunk by scroll-padding on BOTH sides, so an
+       item's snapped position sits 100vw - 2 * --pad into its own cover range.
+       Centring the range there puts the midpoint of every keyframe set exactly
+       at rest: photo centred in its frame, corner on the image's anchor corner,
+       identically on every item. The drift only happens in transit. */
+    section[tabindex] > figure > img,
+    section[tabindex] > figure::after {
+      animation-timeline: --item;
+      animation-range:
+        cover calc(100vw - 2 * var(--pad) - 2 * (var(--item) + var(--gap)))
+        cover calc(100vw - 2 * var(--pad) + 2 * (var(--item) + var(--gap)));
     }
   }
 
   section[tabindex] > figure {
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    /* One timeline for the whole item. view(inline) would make each subject its
+       own timeline, so the corner (small) and the photo (large) would read
+       different progress at the same scroll position. */
+    view-timeline: --item inline;
     /* so a fragment link lands on the item's snap position, not just in view */
     scroll-margin-inline-end: max(0rem, calc(100vw - var(--item) - 2 * var(--pad)));
   }
